@@ -65,7 +65,7 @@ class LanderAgent:
         self.temp_min = temp_min        # Minimum temperature for exploration (prevents collapse to greedy policy)
         self.temp_decay = temp_decay    # Temperature decay PER EPISODE
 
-        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 
         # Main and Target networks (improves stability)
         self.q_network = QNetwork(state_dim, action_dim, hidden_size=hidden_size).to(self.device)
@@ -158,6 +158,6 @@ class LanderAgent:
             self.temp *= self.temp_decay
 
     def soft_update(self, local_model, target_model, tau):
-        """Update target network gradually using Polyak averaging."""
+        """Update target network gradually using Polyak averaging (EMA)"""
         for target_param, local_param in zip(target_model.parameters(), local_model.parameters()):
             target_param.data.copy_(tau * local_param.data + (1.0 - tau) * target_param.data)
