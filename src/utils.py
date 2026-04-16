@@ -48,13 +48,13 @@ def set_default_config(cfg, parsed_args):
             
 def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_means, eval_eps, cfg, timestamp):
     plt.figure(figsize=(10,6))
-    plt.plot(mean_train_rewards, label='Mean Training Reward', alpha=0.3, color='blue')
+    plt.plot(mean_train_rewards, label="Training Reward", alpha=0.3, color='blue')
     
     if cfg.runs > 1:
         plt.fill_between(range(cfg.episodes), mean_train_rewards - std_train_rewards, mean_train_rewards + std_train_rewards, alpha=0.1, color='blue')
     
     ma_train = moving_average(mean_train_rewards, n=cfg.window_width)
-    plt.plot(ma_train, label=f"Mean training reward", color='red')
+    plt.plot(ma_train, label=f"Training Reward (smoothed)", color='red')
     
     if len(all_runs_eval_means) > 0:
         all_runs_eval_means = np.array(all_runs_eval_means)
@@ -67,10 +67,10 @@ def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_mea
         plt.errorbar(
             x_eval, global_eval_means, yerr=global_eval_stds, 
             fmt='-o', color='gold', ecolor='darkorange', linewidth=2, capsize=4,
-            label=f'Mean Eval Score (Greedy)'
+            label=f'Mean Evaluation Reward'
         )
     
-    plt.axhline(200, color='green', linestyle='--', label='Solution threshold')
+    plt.axhline(200, color='green', linestyle='--', label='Solution Threshold')
     plt.xlabel('Episodes')
     plt.ylabel(f'Total reward (averaged over {cfg.runs} runs)')
     algorithm_name = " ".join(word.capitalize() for word in cfg.algorithm.split("_"))
