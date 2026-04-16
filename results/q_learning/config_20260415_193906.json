@@ -1,10 +1,10 @@
 {
     "buffer_capacity":  50000,
-    "eval_episodes":  50,
+    "eval_runs":  50,
     "runs":  5,
     "output_dir":  "temp",
     "window_width":  100,
-    "eval_freq":  50,
+    "eval_period":  50,
     "tau":  0.001,
     "algorithm":  "q_learning",
     "episodes":  800,
