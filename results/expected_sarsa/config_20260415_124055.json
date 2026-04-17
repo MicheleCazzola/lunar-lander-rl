@@ -8,7 +8,7 @@
     "tau":  0.001,
     "algorithm":  "expected_sarsa",
     "episodes":  800,
-    "temp_initial":  1,
+    "temp_init":  1,
     "gamma":  0.99,
     "temp_decay":  0.992,
     "lr":  0.001,

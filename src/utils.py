@@ -78,7 +78,7 @@ def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_mea
     plt.legend(loc='lower right')
     plt.grid(alpha=0.3)
     plot_path = os.path.join(cfg.output_dir, f"reward_plot_{cfg.algorithm}_{timestamp}.png")
-    plt.savefig(plot_path)
+    plt.savefig(plot_path, dpi=200, bbox_inches='tight')
     plt.close()
     
     logging.info(f"Plot saved in: {plot_path}")
