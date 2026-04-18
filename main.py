@@ -28,12 +28,14 @@ def single_run(run, cfg, timestamp):
         state_dim, 
         action_dim, 
         algorithm=cfg.algorithm,
+        double_learning=cfg.double,
         lr=cfg.lr,
         gamma=cfg.gamma,
         tau=cfg.tau,
         batch_size=cfg.batch_size,
         buffer_capacity=cfg.buffer_capacity,
         hidden_size=cfg.hidden_size,
+        loss=cfg.loss,
         temp_init=cfg.temp_init,
         temp_min=cfg.temp_min,
         temp_decay=cfg.temp_decay,
@@ -68,12 +70,15 @@ def main():
     args = argparse.ArgumentParser(description="Deep RL Agent for LunarLander using PyTorch")
     args.add_argument("--from-config", type=str, default=os.path.join("config", "config.yaml"), help="YAML configuration file")
     args.add_argument("--algorithm", type=str, choices=["q_learning", "sarsa", "expected_sarsa"], help="Overrides algorithm from config")
+    args.add_argument("--double", action='store_true', help="Use Double Q-Learning (or Double SARSA/Expected SARSA) if set")
     args.add_argument("--episodes", type=int, help="Number of training episodes")
     args.add_argument("--lr", type=float, help="Learning rate")
     args.add_argument("--temp-decay", type=float, help="Temperature decay rate")
     args.add_argument("--eval-period", type=float, help="Frequency of evaluation (in episodes)")
     args.add_argument("--eval-runs", type=int, help="Number of evaluation episodes per evaluation phase")
     args.add_argument("--runs", type=int, help="Number of independent runs for averaging results")
+    args.add_argument("--hidden-size", type=int, help="Number of hidden units in the Q-network")
+    args.add_argument("--loss", type=str, choices=["mse", "smooth_l1"], help="Loss function for training")
     args.add_argument("--output-dir", type=str, help="Output directory")
     parsed_args = args.parse_args()
     

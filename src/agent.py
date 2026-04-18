@@ -53,10 +53,15 @@ class LanderAgent:
     """
     Deep RL Agent that supports Q-Learning, SARSA, and Expected SARSA.
     """
-    def __init__(self, state_dim, action_dim, algorithm, lr, gamma, tau, batch_size, buffer_capacity, hidden_size, temp_init, temp_min, temp_decay):
+    def __init__(self, state_dim, action_dim, algorithm, double_learning, lr, gamma, tau, batch_size, buffer_capacity, hidden_size, loss, temp_init, temp_min, temp_decay):
+        
+        assert algorithm in ["q_learning", "sarsa", "expected_sarsa"], "Invalid algorithm choice"
+        assert loss in ["mse", "smooth_l1"], "Invalid loss function choice"
+        
         self.state_dim = state_dim
         self.action_dim = action_dim
         self.algorithm = algorithm
+        self.double_learning = double_learning
         self.lr = lr
         self.gamma = gamma
         self.tau = tau
@@ -76,6 +81,7 @@ class LanderAgent:
         self.optimizer = optim.Adam(self.q_network.parameters(), lr=lr)
 
         self.memory = ReplayBuffer(capacity=buffer_capacity, batch_size=batch_size)
+        self.loss_fn = nn.MSELoss() if loss == "mse" else nn.SmoothL1Loss()
         
     def act(self, state, eval_mode=False):
         """Softmax policy for training or pure greedy policy for Evaluation."""
@@ -118,30 +124,47 @@ class LanderAgent:
         with torch.no_grad():
             if self.algorithm == "q_learning":
                 # Q-Learning: Use max Q-value for next state
-                next_q_values = self.target_network(next_states).max(1)[0].unsqueeze(1)
-                
+                if self.double_learning:
+                    # Double Q-Learning: Action selection from local, evaluation from target
+                    next_q_local = self.q_network(next_states)
+                    next_actions_local = torch.argmax(next_q_local, dim=1, keepdim=True)
+                    next_q_values = self.target_network(next_states).gather(1, next_actions_local)
+                else:
+                    next_q_values = self.target_network(next_states).max(dim=1, keepdim=True)[0]
+            
             elif self.algorithm == "sarsa":
                 # SARSA: Use 'next_action' from buffer to calculate target
-                next_q_values = self.target_network(next_states).gather(1, next_actions)
-                
+                if self.double_learning:
+                    # Double SARSA: Action selection from local, evaluation from target
+                    next_q_local = self.q_network(next_states)
+                    next_actions_local = torch.argmax(next_q_local, dim=1, keepdim=True)
+                    next_q_values = self.target_network(next_states).gather(1, next_actions_local)
+                else:
+                    next_q_values = self.q_network(next_states).gather(1, next_actions)
+                    
             elif self.algorithm == "expected_sarsa":
-                # Expected SARSA: Weighted average by Softmax probabilities
-                q_next_full = self.target_network(next_states)
+                # Double Expected SARSA: Weighted average by Softmax probabilities
+                if self.double_learning:
+                    q_next_target = self.target_network(next_states)
+                    q_next_local = self.q_network(next_states)
+                else:
+                    q_next_target = self.target_network(next_states)
+                    q_next_local = q_next_target
                 
-                # Compute probabilities using batched Softmax policy
-                preferences = q_next_full / self.temp
+                # Compute probabilities using batched Softmax policy based on local network
+                preferences = q_next_local / self.temp
                 max_prefs = torch.max(preferences, dim=1, keepdim=True)[0]
                 exp_prefs = torch.exp(preferences - max_prefs)
                 probs = exp_prefs / torch.sum(exp_prefs, dim=1, keepdim=True)
                 
-                next_q_values = (probs * q_next_full).sum(dim=1, keepdim=True)
+                next_q_values = (probs * q_next_target).sum(dim=1, keepdim=True)
                 
             else:
                 raise ValueError("Unknown algorithm. Choose among Q-Learning, SARSA, Expected Sarsa.")
 
             target_q_values = rewards + (self.gamma * next_q_values * (1 - finished))
 
-        loss = F.mse_loss(q_values, target_q_values)
+        loss = self.loss_fn(q_values, target_q_values)
         self.optimizer.zero_grad()
         loss.backward()
         

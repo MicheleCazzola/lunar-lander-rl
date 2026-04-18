@@ -58,8 +58,8 @@ def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_mea
     
     if len(all_runs_eval_means) > 0:
         all_runs_eval_means = np.array(all_runs_eval_means)
-        global_eval_means = np.mean(all_runs_eval_means, axis=0)
-        global_eval_stds = np.std(all_runs_eval_means, axis=0)
+        global_eval_means = np.nanmean(all_runs_eval_means, axis=0)
+        global_eval_stds = np.nanstd(all_runs_eval_means, axis=0)
         
         # eval_eps is a list of lists (one per run), so we only need the first one for the X-axis
         x_eval = eval_eps[0] if len(eval_eps) > 0 and isinstance(eval_eps[0], list) else eval_eps
