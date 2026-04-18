@@ -1,0 +1,21 @@
+{
+    "algorithm": "q_learning",
+    "double": false,
+    "episodes": 1200,
+    "runs": 30,
+    "output_dir": "temp",
+    "lr": 0.0003,
+    "batch_size": 128,
+    "buffer_capacity": 50000,
+    "hidden_size": 128,
+    "temp_init": 1.0,
+    "temp_min": 0.01,
+    "temp_decay": 0.995,
+    "gamma": 0.99,
+    "tau": 0.001,
+    "window_width": 100,
+    "eval_period": 50,
+    "eval_runs": 50,
+    "loss": "mse",
+    "from_config": "temp/config_q_learning_20260416_081954.json"
+}
