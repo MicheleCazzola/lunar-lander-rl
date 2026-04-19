@@ -16,5 +16,7 @@
     "batch_size":  128,
     "temp_min":  0.01,
     "hidden_size":  128,
-    "loss": "mse"
+    "loss": "mse",
+    "update_period": 1,
+    "from_config": "config/config.yaml"
 }
