@@ -66,10 +66,10 @@ class LanderAgent:
         self.gamma = gamma
         self.tau = tau
         self.batch_size = batch_size
-        self.temp = temp_init           # Initial exploration temperature
-        self.temp_min = temp_min        # Minimum temperature for exploration (prevents collapse to greedy policy)
-        self.temp_decay = temp_decay    # Temperature decay PER EPISODE
-
+        self.temp = temp_init               # Initial exploration temperature
+        self.temp_min = temp_min            # Minimum temperature for exploration (prevents collapse to greedy policy)
+        self.temp_decay = temp_decay        # Temperature decay per episode
+        
         self.device = torch.device("cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu")
 
         # Main and Target networks (improves stability)
@@ -105,9 +105,9 @@ class LanderAgent:
 
     def learn(self):
         """Explicit learning step for Q-Learning, SARSA, and Expected SARSA."""
-        if len(self.memory) < self.batch_size:
+        if len(self.memory) < max(self.batch_size, 500):
             return
-
+        
         states, actions, rewards, next_states, finished, next_actions = self.memory.sample()
 
         states = torch.FloatTensor(states).to(self.device)
@@ -136,9 +136,7 @@ class LanderAgent:
                 # SARSA: Use 'next_action' from buffer to calculate target
                 if self.double_learning:
                     # Double SARSA: Action selection from local, evaluation from target
-                    next_q_local = self.q_network(next_states)
-                    next_actions_local = torch.argmax(next_q_local, dim=1, keepdim=True)
-                    next_q_values = self.target_network(next_states).gather(1, next_actions_local)
+                    next_q_values = self.target_network(next_states).gather(1, next_actions)
                 else:
                     next_q_values = self.q_network(next_states).gather(1, next_actions)
                     

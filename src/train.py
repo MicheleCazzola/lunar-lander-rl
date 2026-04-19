@@ -20,7 +20,7 @@ def evaluate_agent(env, agent, eval_runs=30):
     
     return np.mean(eval_rewards), np.std(eval_rewards)
 
-def train_agent(env, agent, episodes, window_width, eval_period, eval_runs, run_index, train_runs):
+def train_agent(env, agent, episodes, window_width, update_period, eval_period, eval_runs, run_index, train_runs):
     """
     Executes the core training loop and invokes periodic evaluations.
     """
@@ -34,6 +34,7 @@ def train_agent(env, agent, episodes, window_width, eval_period, eval_runs, run_
         total_reward = 0
         done = False
         truncated = False
+        step_count = 0
 
         while not (done or truncated):
             # Interaction
@@ -43,12 +44,14 @@ def train_agent(env, agent, episodes, window_width, eval_period, eval_runs, run_
             # Save into buffer
             agent.memory.append(state, action, reward, next_state, (done or truncated), next_action)
             
-            # Explicit learning on a mini-batch (Actual Training)
-            agent.learn()
+            if (step_count + 1) % update_period == 0:
+                # Explicit learning on a mini-batch (Actual Training)
+                agent.learn()
 
             state = next_state
             action = next_action 
             total_reward += reward
+            step_count += 1
 
         # Temperature decay at episode end
         agent.update_temp()

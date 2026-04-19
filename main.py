@@ -38,7 +38,7 @@ def single_run(run, cfg, timestamp):
         loss=cfg.loss,
         temp_init=cfg.temp_init,
         temp_min=cfg.temp_min,
-        temp_decay=cfg.temp_decay,
+        temp_decay=cfg.temp_decay
     )
     
     # Training loop with periodic evaluation
@@ -47,6 +47,7 @@ def single_run(run, cfg, timestamp):
         agent=agent,
         episodes=cfg.episodes,
         window_width=cfg.window_width,
+        update_period=cfg.update_period,
         eval_period=cfg.eval_period,
         eval_runs=cfg.eval_runs,
         run_index=run,
@@ -82,6 +83,7 @@ def main():
     args.add_argument("--batch-size", type=int, help="Batch size for training")
     args.add_argument("--buffer-capacity", type=int, help="Capacity of the replay buffer")
     args.add_argument("--loss", type=str, choices=["mse", "smooth_l1"], help="Loss function for training")
+    args.add_argument("--update-period", type=int, help="Frequency of agent learning updates (in steps)")
     args.add_argument("--output-dir", type=str, help="Output directory")
     parsed_args = args.parse_args()
     
@@ -96,6 +98,8 @@ def main():
     setup_logger(cfg, timestamp)
     
     logging.info(f"Starting training with algorithm: '{cfg.algorithm}'")
+    
+    print(f"Configuration:\n{json.dumps(vars(cfg), indent=4)}")
     
     # Auto-save parameters at run start
     config_data = vars(cfg)
