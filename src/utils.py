@@ -21,7 +21,8 @@ def setup_logger(cfg, timestamp):
     logging.basicConfig(
         filename=f"{output_dir}/training_{timestamp}.log",
         level=logging.INFO,
-        format='%(asctime)s - %(message)s'
+        format='%(asctime)s - %(message)s',
+        encoding='utf-8'
     )
     
     console_handler = logging.StreamHandler()
