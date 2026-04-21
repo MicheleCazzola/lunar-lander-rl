@@ -17,6 +17,6 @@
     "eval_period": 50,
     "eval_runs": 30,
     "loss": "smooth_l1",
-	"update_period": 1,
+    "update_period": 1,
     "from_config": "results/q_learning/config_q_learning_20260417_094343.json"
 }
