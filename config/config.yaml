@@ -17,3 +17,6 @@ temp_decay: 0.992
 window_width: 100
 eval_period: 50
 eval_runs: 50
+
+loss: "smooth_l1"
+update_period: 1
