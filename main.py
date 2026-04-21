@@ -74,6 +74,7 @@ def main():
     args.add_argument("--double", action='store_true', help="Use Double Q-Learning (or Double SARSA/Expected SARSA) if set")
     args.add_argument("--episodes", type=int, help="Number of training episodes")
     args.add_argument("--lr", type=float, help="Learning rate")
+    args.add_argument("--tau", type=float, help="Soft update coefficient for target network")
     args.add_argument("--temp-decay", type=float, help="Temperature decay rate")
     args.add_argument("--temp-min", type=float, help="Minimum temperature for exploration")
     args.add_argument("--eval-period", type=int, help="Frequency of evaluation (in episodes)")
