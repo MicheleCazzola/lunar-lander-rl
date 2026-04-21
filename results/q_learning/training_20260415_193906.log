@@ -51,7 +51,7 @@
 2026-04-15 19:39:41,645 - Episodio: 049/800 | Reward:  225.44 | Temp: 0.611 | MA (100 ep): -110.00
 2026-04-15 19:39:42,529 - Episodio: 050/800 | Reward:   70.74 | Temp: 0.605 | MA (100 ep): -106.38
 2026-04-15 19:39:42,529 - --- Inizio Evaluation run all'Episodio 50 ---
-2026-04-15 19:39:50,150 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run): -191.18 ± 111.49 ***
+2026-04-15 19:39:50,150 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run): -191.18 Â± 111.49 ***
 2026-04-15 19:39:50,150 - --- Fine Evaluation ---
 2026-04-15 19:39:50,757 - Episodio: 051/800 | Reward:  -11.79 | Temp: 0.599 | MA (100 ep): -104.53
 2026-04-15 19:39:51,347 - Episodio: 052/800 | Reward:  -32.36 | Temp: 0.593 | MA (100 ep): -103.14
@@ -104,7 +104,7 @@
 2026-04-15 19:41:56,973 - Episodio: 099/800 | Reward:  -80.57 | Temp: 0.370 | MA (100 ep):  -78.16
 2026-04-15 19:42:00,413 - Episodio: 100/800 | Reward:  -26.49 | Temp: 0.366 | MA (100 ep):  -77.64
 2026-04-15 19:42:00,413 - --- Inizio Evaluation run all'Episodio 100 ---
-2026-04-15 19:42:09,888 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -23.04 ± 86.33 ***
+2026-04-15 19:42:09,888 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -23.04 Â± 86.33 ***
 2026-04-15 19:42:09,888 - --- Fine Evaluation ---
 2026-04-15 19:42:13,411 - Episodio: 101/800 | Reward:    7.02 | Temp: 0.362 | MA (100 ep):  -76.46
 2026-04-15 19:42:16,851 - Episodio: 102/800 | Reward:  -48.44 | Temp: 0.359 | MA (100 ep):  -76.32
@@ -157,7 +157,7 @@
 2026-04-15 19:44:22,482 - Episodio: 149/800 | Reward:   84.91 | Temp: 0.224 | MA (100 ep):   21.50
 2026-04-15 19:44:23,685 - Episodio: 150/800 | Reward:   -8.46 | Temp: 0.221 | MA (100 ep):   20.71
 2026-04-15 19:44:23,685 - --- Inizio Evaluation run all'Episodio 150 ---
-2026-04-15 19:44:36,868 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):   56.71 ± 121.85 ***
+2026-04-15 19:44:36,868 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):   56.71 Â± 121.85 ***
 2026-04-15 19:44:36,868 - --- Fine Evaluation ---
 2026-04-15 19:44:39,174 - Episodio: 151/800 | Reward:  205.96 | Temp: 0.219 | MA (100 ep):   22.89
 2026-04-15 19:44:44,178 - Episodio: 152/800 | Reward:  -60.86 | Temp: 0.217 | MA (100 ep):   22.60
@@ -210,7 +210,7 @@
 2026-04-15 19:46:43,078 - Episodio: 199/800 | Reward:   -6.64 | Temp: 0.135 | MA (100 ep):  113.11
 2026-04-15 19:46:46,596 - Episodio: 200/800 | Reward:  -34.74 | Temp: 0.134 | MA (100 ep):  113.03
 2026-04-15 19:46:46,596 - --- Inizio Evaluation run all'Episodio 200 ---
-2026-04-15 19:46:55,490 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):  128.42 ± 128.84 ***
+2026-04-15 19:46:55,490 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):  128.42 Â± 128.84 ***
 2026-04-15 19:46:55,490 - --- Fine Evaluation ---
 2026-04-15 19:46:56,309 - Episodio: 201/800 | Reward:  261.17 | Temp: 0.133 | MA (100 ep):  115.57
 2026-04-15 19:46:57,271 - Episodio: 202/800 | Reward:  252.58 | Temp: 0.131 | MA (100 ep):  118.58
@@ -263,7 +263,7 @@
 2026-04-15 19:47:47,112 - Episodio: 249/800 | Reward:  244.78 | Temp: 0.082 | MA (100 ep):  156.55
 2026-04-15 19:47:47,678 - Episodio: 250/800 | Reward:   56.28 | Temp: 0.081 | MA (100 ep):  157.19
 2026-04-15 19:47:47,678 - --- Inizio Evaluation run all'Episodio 250 ---
-2026-04-15 19:47:53,790 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):  171.86 ± 125.49 ***
+2026-04-15 19:47:53,790 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):  171.86 Â± 125.49 ***
 2026-04-15 19:47:53,790 - --- Fine Evaluation ---
 2026-04-15 19:47:54,864 - Episodio: 251/800 | Reward:  242.11 | Temp: 0.080 | MA (100 ep):  157.55
 2026-04-15 19:47:55,633 - Episodio: 252/800 | Reward:  266.93 | Temp: 0.079 | MA (100 ep):  160.83
@@ -316,7 +316,7 @@
 2026-04-15 19:48:53,141 - Episodio: 299/800 | Reward:  214.25 | Temp: 0.050 | MA (100 ep):  193.16
 2026-04-15 19:48:53,930 - Episodio: 300/800 | Reward:  270.58 | Temp: 0.049 | MA (100 ep):  196.21
 2026-04-15 19:48:53,930 - --- Inizio Evaluation run all'Episodio 300 ---
-2026-04-15 19:49:00,226 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  180.73 ± 105.16 ***
+2026-04-15 19:49:00,226 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  180.73 Â± 105.16 ***
 2026-04-15 19:49:00,226 - --- Fine Evaluation ---
 2026-04-15 19:49:01,135 - Episodio: 301/800 | Reward:  255.51 | Temp: 0.049 | MA (100 ep):  196.16
 2026-04-15 19:49:02,021 - Episodio: 302/800 | Reward:  240.91 | Temp: 0.048 | MA (100 ep):  196.04
@@ -369,7 +369,7 @@
 2026-04-15 19:50:12,204 - Episodio: 349/800 | Reward:  249.69 | Temp: 0.030 | MA (100 ep):  209.24
 2026-04-15 19:50:13,150 - Episodio: 350/800 | Reward:  266.21 | Temp: 0.030 | MA (100 ep):  211.34
 2026-04-15 19:50:13,150 - --- Inizio Evaluation run all'Episodio 350 ---
-2026-04-15 19:50:17,325 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  230.20 ± 89.62 ***
+2026-04-15 19:50:17,325 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  230.20 Â± 89.62 ***
 2026-04-15 19:50:17,325 - --- Fine Evaluation ---
 2026-04-15 19:50:18,171 - Episodio: 351/800 | Reward:  260.71 | Temp: 0.029 | MA (100 ep):  211.52
 2026-04-15 19:50:18,977 - Episodio: 352/800 | Reward:  257.56 | Temp: 0.029 | MA (100 ep):  211.43
@@ -422,7 +422,7 @@
 2026-04-15 19:51:04,608 - Episodio: 399/800 | Reward:  251.69 | Temp: 0.018 | MA (100 ep):  224.93
 2026-04-15 19:51:05,546 - Episodio: 400/800 | Reward:  266.17 | Temp: 0.018 | MA (100 ep):  224.88
 2026-04-15 19:51:05,546 - --- Inizio Evaluation run all'Episodio 400 ---
-2026-04-15 19:51:09,529 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  245.09 ± 63.99 ***
+2026-04-15 19:51:09,529 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  245.09 Â± 63.99 ***
 2026-04-15 19:51:09,529 - --- Fine Evaluation ---
 2026-04-15 19:51:10,423 - Episodio: 401/800 | Reward:  266.94 | Temp: 0.018 | MA (100 ep):  225.00
 2026-04-15 19:51:11,208 - Episodio: 402/800 | Reward:  246.49 | Temp: 0.018 | MA (100 ep):  225.05
@@ -475,7 +475,7 @@
 2026-04-15 19:51:56,369 - Episodio: 449/800 | Reward:  273.69 | Temp: 0.011 | MA (100 ep):  245.15
 2026-04-15 19:51:57,190 - Episodio: 450/800 | Reward:  292.75 | Temp: 0.011 | MA (100 ep):  245.42
 2026-04-15 19:51:57,190 - --- Inizio Evaluation run all'Episodio 450 ---
-2026-04-15 19:52:01,308 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  236.36 ± 89.25 ***
+2026-04-15 19:52:01,308 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  236.36 Â± 89.25 ***
 2026-04-15 19:52:01,308 - --- Fine Evaluation ---
 2026-04-15 19:52:02,189 - Episodio: 451/800 | Reward:  266.23 | Temp: 0.011 | MA (100 ep):  245.47
 2026-04-15 19:52:03,926 - Episodio: 452/800 | Reward:  247.53 | Temp: 0.011 | MA (100 ep):  245.37
@@ -528,7 +528,7 @@
 2026-04-15 19:52:49,638 - Episodio: 499/800 | Reward:  269.48 | Temp: 0.010 | MA (100 ep):  257.07
 2026-04-15 19:52:50,465 - Episodio: 500/800 | Reward:  274.39 | Temp: 0.010 | MA (100 ep):  257.15
 2026-04-15 19:52:50,465 - --- Inizio Evaluation run all'Episodio 500 ---
-2026-04-15 19:52:54,676 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  248.22 ± 54.68 ***
+2026-04-15 19:52:54,676 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  248.22 Â± 54.68 ***
 2026-04-15 19:52:54,676 - --- Fine Evaluation ---
 2026-04-15 19:52:55,354 - Episodio: 501/800 | Reward:  252.73 | Temp: 0.010 | MA (100 ep):  257.01
 2026-04-15 19:52:56,063 - Episodio: 502/800 | Reward:  251.71 | Temp: 0.010 | MA (100 ep):  257.06
@@ -581,7 +581,7 @@
 2026-04-15 19:53:37,000 - Episodio: 549/800 | Reward:  276.41 | Temp: 0.010 | MA (100 ep):  252.15
 2026-04-15 19:53:37,901 - Episodio: 550/800 | Reward:  283.76 | Temp: 0.010 | MA (100 ep):  252.06
 2026-04-15 19:53:37,901 - --- Inizio Evaluation run all'Episodio 550 ---
-2026-04-15 19:53:41,530 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  262.70 ± 47.21 ***
+2026-04-15 19:53:41,530 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  262.70 Â± 47.21 ***
 2026-04-15 19:53:41,530 - --- Fine Evaluation ---
 2026-04-15 19:53:42,290 - Episodio: 551/800 | Reward:  254.37 | Temp: 0.010 | MA (100 ep):  251.94
 2026-04-15 19:53:43,208 - Episodio: 552/800 | Reward:  285.92 | Temp: 0.010 | MA (100 ep):  252.33
@@ -634,7 +634,7 @@
 2026-04-15 19:54:24,564 - Episodio: 599/800 | Reward:  254.51 | Temp: 0.010 | MA (100 ep):  245.31
 2026-04-15 19:54:25,494 - Episodio: 600/800 | Reward:  282.41 | Temp: 0.010 | MA (100 ep):  245.39
 2026-04-15 19:54:25,494 - --- Inizio Evaluation run all'Episodio 600 ---
-2026-04-15 19:54:28,762 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  272.45 ± 41.60 ***
+2026-04-15 19:54:28,762 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  272.45 Â± 41.60 ***
 2026-04-15 19:54:28,762 - --- Fine Evaluation ---
 2026-04-15 19:54:29,367 - Episodio: 601/800 | Reward:   46.22 | Temp: 0.010 | MA (100 ep):  243.33
 2026-04-15 19:54:30,240 - Episodio: 602/800 | Reward:  293.74 | Temp: 0.010 | MA (100 ep):  243.75
@@ -687,7 +687,7 @@
 2026-04-15 19:55:13,565 - Episodio: 649/800 | Reward:  280.59 | Temp: 0.010 | MA (100 ep):  252.78
 2026-04-15 19:55:14,262 - Episodio: 650/800 | Reward:  271.36 | Temp: 0.010 | MA (100 ep):  252.66
 2026-04-15 19:55:14,262 - --- Inizio Evaluation run all'Episodio 650 ---
-2026-04-15 19:55:17,508 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  201.20 ± 136.30 ***
+2026-04-15 19:55:17,508 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  201.20 Â± 136.30 ***
 2026-04-15 19:55:17,508 - --- Fine Evaluation ---
 2026-04-15 19:55:18,486 - Episodio: 651/800 | Reward:  281.15 | Temp: 0.010 | MA (100 ep):  252.93
 2026-04-15 19:55:19,179 - Episodio: 652/800 | Reward:  276.21 | Temp: 0.010 | MA (100 ep):  252.83
@@ -740,7 +740,7 @@
 2026-04-15 19:55:57,431 - Episodio: 699/800 | Reward:   45.92 | Temp: 0.010 | MA (100 ep):  253.10
 2026-04-15 19:55:58,313 - Episodio: 700/800 | Reward:  287.31 | Temp: 0.010 | MA (100 ep):  253.15
 2026-04-15 19:55:58,313 - --- Inizio Evaluation run all'Episodio 700 ---
-2026-04-15 19:56:02,226 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  217.68 ± 91.62 ***
+2026-04-15 19:56:02,226 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  217.68 Â± 91.62 ***
 2026-04-15 19:56:02,226 - --- Fine Evaluation ---
 2026-04-15 19:56:03,006 - Episodio: 701/800 | Reward:  273.30 | Temp: 0.010 | MA (100 ep):  255.42
 2026-04-15 19:56:03,786 - Episodio: 702/800 | Reward:  284.48 | Temp: 0.010 | MA (100 ep):  255.33
@@ -793,7 +793,7 @@
 2026-04-15 19:56:45,008 - Episodio: 749/800 | Reward:   31.54 | Temp: 0.010 | MA (100 ep):  248.09
 2026-04-15 19:56:45,989 - Episodio: 750/800 | Reward:  288.72 | Temp: 0.010 | MA (100 ep):  248.27
 2026-04-15 19:56:45,989 - --- Inizio Evaluation run all'Episodio 750 ---
-2026-04-15 19:56:48,853 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  241.43 ± 80.47 ***
+2026-04-15 19:56:48,853 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  241.43 Â± 80.47 ***
 2026-04-15 19:56:48,853 - --- Fine Evaluation ---
 2026-04-15 19:56:49,792 - Episodio: 751/800 | Reward:  283.78 | Temp: 0.010 | MA (100 ep):  248.29
 2026-04-15 19:56:50,722 - Episodio: 752/800 | Reward:  275.47 | Temp: 0.010 | MA (100 ep):  248.28
@@ -846,7 +846,7 @@
 2026-04-15 19:57:28,622 - Episodio: 799/800 | Reward:  292.59 | Temp: 0.010 | MA (100 ep):  253.62
 2026-04-15 19:57:29,525 - Episodio: 800/800 | Reward:  277.17 | Temp: 0.010 | MA (100 ep):  253.52
 2026-04-15 19:57:29,525 - --- Inizio Evaluation run all'Episodio 800 ---
-2026-04-15 19:57:32,476 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  260.74 ± 67.40 ***
+2026-04-15 19:57:32,476 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  260.74 Â± 67.40 ***
 2026-04-15 19:57:32,476 - --- Fine Evaluation ---
 2026-04-15 19:57:32,488 - Model run 1 saved in temp/model_q_learning_run1_20260415_193906.pth.
 2026-04-15 19:57:32,488 - ========== INIZIO RUN 2/5 ==========
@@ -901,7 +901,7 @@
 2026-04-15 19:58:12,789 - Episodio: 049/800 | Reward:  -31.34 | Temp: 0.611 | MA (100 ep): -160.90
 2026-04-15 19:58:13,770 - Episodio: 050/800 | Reward:  -79.18 | Temp: 0.605 | MA (100 ep): -159.27
 2026-04-15 19:58:13,770 - --- Inizio Evaluation run all'Episodio 50 ---
-2026-04-15 19:58:22,078 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run): -150.05 ± 124.33 ***
+2026-04-15 19:58:22,078 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run): -150.05 Â± 124.33 ***
 2026-04-15 19:58:22,078 - --- Fine Evaluation ---
 2026-04-15 19:58:23,036 - Episodio: 051/800 | Reward:  -65.04 | Temp: 0.599 | MA (100 ep): -157.42
 2026-04-15 19:58:24,458 - Episodio: 052/800 | Reward:  -60.69 | Temp: 0.593 | MA (100 ep): -155.56
@@ -954,7 +954,7 @@
 2026-04-15 20:00:42,195 - Episodio: 099/800 | Reward:  -22.68 | Temp: 0.370 | MA (100 ep):  -81.06
 2026-04-15 20:00:45,620 - Episodio: 100/800 | Reward:  -33.29 | Temp: 0.366 | MA (100 ep):  -80.58
 2026-04-15 20:00:45,620 - --- Inizio Evaluation run all'Episodio 100 ---
-2026-04-15 20:00:58,254 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -18.40 ± 29.03 ***
+2026-04-15 20:00:58,254 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -18.40 Â± 29.03 ***
 2026-04-15 20:00:58,254 - --- Fine Evaluation ---
 2026-04-15 20:00:59,185 - Episodio: 101/800 | Reward: -220.90 | Temp: 0.362 | MA (100 ep):  -81.40
 2026-04-15 20:01:01,344 - Episodio: 102/800 | Reward: -211.64 | Temp: 0.359 | MA (100 ep):  -80.47
@@ -1007,7 +1007,7 @@
 2026-04-15 20:03:15,277 - Episodio: 149/800 | Reward:  257.63 | Temp: 0.224 | MA (100 ep):   40.56
 2026-04-15 20:03:16,334 - Episodio: 150/800 | Reward:  254.03 | Temp: 0.221 | MA (100 ep):   43.90
 2026-04-15 20:03:16,334 - --- Inizio Evaluation run all'Episodio 150 ---
-2026-04-15 20:03:22,656 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):  186.08 ± 101.16 ***
+2026-04-15 20:03:22,656 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):  186.08 Â± 101.16 ***
 2026-04-15 20:03:22,656 - --- Fine Evaluation ---
 2026-04-15 20:03:24,099 - Episodio: 151/800 | Reward:  269.62 | Temp: 0.219 | MA (100 ep):   47.24
 2026-04-15 20:03:25,604 - Episodio: 152/800 | Reward:  240.56 | Temp: 0.217 | MA (100 ep):   50.25
@@ -1060,7 +1060,7 @@
 2026-04-15 20:04:52,689 - Episodio: 199/800 | Reward:  246.09 | Temp: 0.135 | MA (100 ep):  137.55
 2026-04-15 20:04:54,629 - Episodio: 200/800 | Reward:  212.66 | Temp: 0.134 | MA (100 ep):  140.01
 2026-04-15 20:04:54,629 - --- Inizio Evaluation run all'Episodio 200 ---
-2026-04-15 20:05:02,213 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):  185.69 ± 81.41 ***
+2026-04-15 20:05:02,213 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):  185.69 Â± 81.41 ***
 2026-04-15 20:05:02,213 - --- Fine Evaluation ---
 2026-04-15 20:05:05,885 - Episodio: 201/800 | Reward:  139.73 | Temp: 0.133 | MA (100 ep):  143.61
 2026-04-15 20:05:08,120 - Episodio: 202/800 | Reward:  267.75 | Temp: 0.131 | MA (100 ep):  148.41
@@ -1113,7 +1113,7 @@
 2026-04-15 20:06:23,610 - Episodio: 249/800 | Reward:  256.84 | Temp: 0.082 | MA (100 ep):  192.91
 2026-04-15 20:06:24,139 - Episodio: 250/800 | Reward:   39.61 | Temp: 0.081 | MA (100 ep):  190.77
 2026-04-15 20:06:24,139 - --- Inizio Evaluation run all'Episodio 250 ---
-2026-04-15 20:06:28,712 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):  150.89 ± 109.68 ***
+2026-04-15 20:06:28,712 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):  150.89 Â± 109.68 ***
 2026-04-15 20:06:28,712 - --- Fine Evaluation ---
 2026-04-15 20:06:32,419 - Episodio: 251/800 | Reward:  116.13 | Temp: 0.080 | MA (100 ep):  189.23
 2026-04-15 20:06:33,229 - Episodio: 252/800 | Reward:   27.88 | Temp: 0.079 | MA (100 ep):  187.11
@@ -1166,7 +1166,7 @@
 2026-04-15 20:07:50,894 - Episodio: 299/800 | Reward:  240.35 | Temp: 0.050 | MA (100 ep):  196.90
 2026-04-15 20:07:52,066 - Episodio: 300/800 | Reward:  279.74 | Temp: 0.049 | MA (100 ep):  197.57
 2026-04-15 20:07:52,066 - --- Inizio Evaluation run all'Episodio 300 ---
-2026-04-15 20:07:59,441 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  209.11 ± 65.50 ***
+2026-04-15 20:07:59,441 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  209.11 Â± 65.50 ***
 2026-04-15 20:07:59,441 - --- Fine Evaluation ---
 2026-04-15 20:08:01,226 - Episodio: 301/800 | Reward:  257.82 | Temp: 0.049 | MA (100 ep):  198.75
 2026-04-15 20:08:03,522 - Episodio: 302/800 | Reward:  281.20 | Temp: 0.048 | MA (100 ep):  198.89
@@ -1219,7 +1219,7 @@
 2026-04-15 20:09:06,228 - Episodio: 349/800 | Reward:  269.67 | Temp: 0.030 | MA (100 ep):  214.33
 2026-04-15 20:09:07,285 - Episodio: 350/800 | Reward:  273.80 | Temp: 0.030 | MA (100 ep):  216.67
 2026-04-15 20:09:07,285 - --- Inizio Evaluation run all'Episodio 350 ---
-2026-04-15 20:09:13,261 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  176.53 ± 151.91 ***
+2026-04-15 20:09:13,261 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  176.53 Â± 151.91 ***
 2026-04-15 20:09:13,261 - --- Fine Evaluation ---
 2026-04-15 20:09:14,407 - Episodio: 351/800 | Reward:  257.00 | Temp: 0.029 | MA (100 ep):  218.08
 2026-04-15 20:09:15,920 - Episodio: 352/800 | Reward:  197.78 | Temp: 0.029 | MA (100 ep):  219.78
@@ -1272,7 +1272,7 @@
 2026-04-15 20:10:16,891 - Episodio: 399/800 | Reward:  297.33 | Temp: 0.018 | MA (100 ep):  234.05
 2026-04-15 20:10:18,040 - Episodio: 400/800 | Reward:  302.62 | Temp: 0.018 | MA (100 ep):  234.28
 2026-04-15 20:10:18,040 - --- Inizio Evaluation run all'Episodio 400 ---
-2026-04-15 20:10:23,796 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  220.25 ± 71.76 ***
+2026-04-15 20:10:23,796 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  220.25 Â± 71.76 ***
 2026-04-15 20:10:23,796 - --- Fine Evaluation ---
 2026-04-15 20:10:24,607 - Episodio: 401/800 | Reward:  255.66 | Temp: 0.018 | MA (100 ep):  234.26
 2026-04-15 20:10:25,709 - Episodio: 402/800 | Reward:  254.46 | Temp: 0.018 | MA (100 ep):  233.99
@@ -1325,7 +1325,7 @@
 2026-04-15 20:11:17,355 - Episodio: 449/800 | Reward:  253.64 | Temp: 0.011 | MA (100 ep):  225.87
 2026-04-15 20:11:18,046 - Episodio: 450/800 | Reward:  262.77 | Temp: 0.011 | MA (100 ep):  225.76
 2026-04-15 20:11:18,046 - --- Inizio Evaluation run all'Episodio 450 ---
-2026-04-15 20:11:22,380 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  239.77 ± 59.39 ***
+2026-04-15 20:11:22,380 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  239.77 Â± 59.39 ***
 2026-04-15 20:11:22,381 - --- Fine Evaluation ---
 2026-04-15 20:11:23,802 - Episodio: 451/800 | Reward:  194.92 | Temp: 0.011 | MA (100 ep):  225.14
 2026-04-15 20:11:25,062 - Episodio: 452/800 | Reward:  223.91 | Temp: 0.011 | MA (100 ep):  225.40
@@ -1378,7 +1378,7 @@
 2026-04-15 20:12:11,379 - Episodio: 499/800 | Reward:  277.43 | Temp: 0.010 | MA (100 ep):  219.15
 2026-04-15 20:12:12,301 - Episodio: 500/800 | Reward:  264.69 | Temp: 0.010 | MA (100 ep):  218.77
 2026-04-15 20:12:12,301 - --- Inizio Evaluation run all'Episodio 500 ---
-2026-04-15 20:12:16,417 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  248.09 ± 67.60 ***
+2026-04-15 20:12:16,417 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  248.09 Â± 67.60 ***
 2026-04-15 20:12:16,417 - --- Fine Evaluation ---
 2026-04-15 20:12:17,266 - Episodio: 501/800 | Reward:  288.04 | Temp: 0.010 | MA (100 ep):  219.09
 2026-04-15 20:12:18,001 - Episodio: 502/800 | Reward:  244.59 | Temp: 0.010 | MA (100 ep):  218.99
@@ -1431,7 +1431,7 @@
 2026-04-15 20:13:01,329 - Episodio: 549/800 | Reward:  286.08 | Temp: 0.010 | MA (100 ep):  248.39
 2026-04-15 20:13:02,043 - Episodio: 550/800 | Reward:  263.07 | Temp: 0.010 | MA (100 ep):  248.39
 2026-04-15 20:13:02,043 - --- Inizio Evaluation run all'Episodio 550 ---
-2026-04-15 20:13:06,215 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  260.79 ± 40.18 ***
+2026-04-15 20:13:06,215 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  260.79 Â± 40.18 ***
 2026-04-15 20:13:06,215 - --- Fine Evaluation ---
 2026-04-15 20:13:06,940 - Episodio: 551/800 | Reward:  300.15 | Temp: 0.010 | MA (100 ep):  249.44
 2026-04-15 20:13:07,714 - Episodio: 552/800 | Reward:  287.52 | Temp: 0.010 | MA (100 ep):  250.08
@@ -1484,7 +1484,7 @@
 2026-04-15 20:13:47,734 - Episodio: 599/800 | Reward:  284.96 | Temp: 0.010 | MA (100 ep):  270.85
 2026-04-15 20:13:48,637 - Episodio: 600/800 | Reward:  291.41 | Temp: 0.010 | MA (100 ep):  271.11
 2026-04-15 20:13:48,637 - --- Inizio Evaluation run all'Episodio 600 ---
-2026-04-15 20:13:52,427 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  255.86 ± 72.26 ***
+2026-04-15 20:13:52,427 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  255.86 Â± 72.26 ***
 2026-04-15 20:13:52,427 - --- Fine Evaluation ---
 2026-04-15 20:13:53,152 - Episodio: 601/800 | Reward:  255.37 | Temp: 0.010 | MA (100 ep):  270.79
 2026-04-15 20:13:53,893 - Episodio: 602/800 | Reward:  261.92 | Temp: 0.010 | MA (100 ep):  270.96
@@ -1537,7 +1537,7 @@
 2026-04-15 20:14:36,153 - Episodio: 649/800 | Reward:  -17.94 | Temp: 0.010 | MA (100 ep):  263.17
 2026-04-15 20:14:38,109 - Episodio: 650/800 | Reward:  242.88 | Temp: 0.010 | MA (100 ep):  262.97
 2026-04-15 20:14:38,109 - --- Inizio Evaluation run all'Episodio 650 ---
-2026-04-15 20:14:41,698 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  210.27 ± 109.83 ***
+2026-04-15 20:14:41,698 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  210.27 Â± 109.83 ***
 2026-04-15 20:14:41,698 - --- Fine Evaluation ---
 2026-04-15 20:14:42,350 - Episodio: 651/800 | Reward:  259.21 | Temp: 0.010 | MA (100 ep):  262.56
 2026-04-15 20:14:43,040 - Episodio: 652/800 | Reward:  307.51 | Temp: 0.010 | MA (100 ep):  262.76
@@ -1590,7 +1590,7 @@
 2026-04-15 20:15:39,307 - Episodio: 699/800 | Reward:  269.57 | Temp: 0.010 | MA (100 ep):  256.91
 2026-04-15 20:15:41,738 - Episodio: 700/800 | Reward:  229.14 | Temp: 0.010 | MA (100 ep):  256.29
 2026-04-15 20:15:41,738 - --- Inizio Evaluation run all'Episodio 700 ---
-2026-04-15 20:15:44,675 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  236.50 ± 90.44 ***
+2026-04-15 20:15:44,675 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  236.50 Â± 90.44 ***
 2026-04-15 20:15:44,675 - --- Fine Evaluation ---
 2026-04-15 20:15:45,273 - Episodio: 701/800 | Reward:  266.26 | Temp: 0.010 | MA (100 ep):  256.40
 2026-04-15 20:15:46,038 - Episodio: 702/800 | Reward:  288.19 | Temp: 0.010 | MA (100 ep):  256.66
@@ -1643,7 +1643,7 @@
 2026-04-15 20:16:30,272 - Episodio: 749/800 | Reward:  288.45 | Temp: 0.010 | MA (100 ep):  257.12
 2026-04-15 20:16:30,827 - Episodio: 750/800 | Reward:  289.13 | Temp: 0.010 | MA (100 ep):  257.58
 2026-04-15 20:16:30,827 - --- Inizio Evaluation run all'Episodio 750 ---
-2026-04-15 20:16:34,585 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  232.11 ± 76.65 ***
+2026-04-15 20:16:34,585 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  232.11 Â± 76.65 ***
 2026-04-15 20:16:34,585 - --- Fine Evaluation ---
 2026-04-15 20:16:35,387 - Episodio: 751/800 | Reward:  303.56 | Temp: 0.010 | MA (100 ep):  258.03
 2026-04-15 20:16:36,089 - Episodio: 752/800 | Reward:  243.84 | Temp: 0.010 | MA (100 ep):  257.39
@@ -1696,7 +1696,7 @@
 2026-04-15 20:17:18,108 - Episodio: 799/800 | Reward:  285.78 | Temp: 0.010 | MA (100 ep):  259.01
 2026-04-15 20:17:18,837 - Episodio: 800/800 | Reward:  264.50 | Temp: 0.010 | MA (100 ep):  259.36
 2026-04-15 20:17:18,837 - --- Inizio Evaluation run all'Episodio 800 ---
-2026-04-15 20:17:21,654 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  165.55 ± 138.43 ***
+2026-04-15 20:17:21,654 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  165.55 Â± 138.43 ***
 2026-04-15 20:17:21,656 - --- Fine Evaluation ---
 2026-04-15 20:17:21,658 - Model run 2 saved in temp/model_q_learning_run2_20260415_193906.pth.
 2026-04-15 20:17:21,658 - ========== INIZIO RUN 3/5 ==========
@@ -1751,7 +1751,7 @@
 2026-04-15 20:18:17,294 - Episodio: 049/800 | Reward:  -57.77 | Temp: 0.611 | MA (100 ep): -182.32
 2026-04-15 20:18:20,824 - Episodio: 050/800 | Reward:  -64.68 | Temp: 0.605 | MA (100 ep): -179.97
 2026-04-15 20:18:20,824 - --- Inizio Evaluation run all'Episodio 50 ---
-2026-04-15 20:18:33,829 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run):  -70.79 ± 20.97 ***
+2026-04-15 20:18:33,829 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run):  -70.79 Â± 20.97 ***
 2026-04-15 20:18:33,829 - --- Fine Evaluation ---
 2026-04-15 20:18:37,344 - Episodio: 051/800 | Reward:  -35.95 | Temp: 0.599 | MA (100 ep): -177.14
 2026-04-15 20:18:40,669 - Episodio: 052/800 | Reward:   18.50 | Temp: 0.593 | MA (100 ep): -173.38
@@ -1804,7 +1804,7 @@
 2026-04-15 20:21:01,089 - Episodio: 099/800 | Reward:  -30.65 | Temp: 0.370 | MA (100 ep): -102.42
 2026-04-15 20:21:04,627 - Episodio: 100/800 | Reward:  -41.82 | Temp: 0.366 | MA (100 ep): -101.81
 2026-04-15 20:21:04,627 - --- Inizio Evaluation run all'Episodio 100 ---
-2026-04-15 20:21:17,969 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -25.13 ± 21.34 ***
+2026-04-15 20:21:17,969 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -25.13 Â± 21.34 ***
 2026-04-15 20:21:17,969 - --- Fine Evaluation ---
 2026-04-15 20:21:21,491 - Episodio: 101/800 | Reward:    6.61 | Temp: 0.362 | MA (100 ep): -100.39
 2026-04-15 20:21:24,867 - Episodio: 102/800 | Reward:   26.16 | Temp: 0.359 | MA (100 ep):  -94.74
@@ -1857,7 +1857,7 @@
 2026-04-15 20:23:27,167 - Episodio: 149/800 | Reward:  236.44 | Temp: 0.224 | MA (100 ep):   31.01
 2026-04-15 20:23:30,670 - Episodio: 150/800 | Reward:    6.99 | Temp: 0.221 | MA (100 ep):   31.72
 2026-04-15 20:23:30,670 - --- Inizio Evaluation run all'Episodio 150 ---
-2026-04-15 20:23:40,965 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):   64.31 ± 136.84 ***
+2026-04-15 20:23:40,965 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):   64.31 Â± 136.84 ***
 2026-04-15 20:23:40,965 - --- Fine Evaluation ---
 2026-04-15 20:23:41,881 - Episodio: 151/800 | Reward:  233.95 | Temp: 0.219 | MA (100 ep):   34.42
 2026-04-15 20:23:44,193 - Episodio: 152/800 | Reward:  194.80 | Temp: 0.217 | MA (100 ep):   36.19
@@ -1910,7 +1910,7 @@
 2026-04-15 20:25:24,942 - Episodio: 199/800 | Reward:  205.03 | Temp: 0.135 | MA (100 ep):  111.25
 2026-04-15 20:25:26,206 - Episodio: 200/800 | Reward:  295.04 | Temp: 0.134 | MA (100 ep):  114.62
 2026-04-15 20:25:26,206 - --- Inizio Evaluation run all'Episodio 200 ---
-2026-04-15 20:25:31,397 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):  165.93 ± 157.38 ***
+2026-04-15 20:25:31,397 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):  165.93 Â± 157.38 ***
 2026-04-15 20:25:31,397 - --- Fine Evaluation ---
 2026-04-15 20:25:32,871 - Episodio: 201/800 | Reward:  -74.32 | Temp: 0.133 | MA (100 ep):  113.81
 2026-04-15 20:25:34,752 - Episodio: 202/800 | Reward:  211.40 | Temp: 0.131 | MA (100 ep):  115.66
@@ -1963,7 +1963,7 @@
 2026-04-15 20:26:43,740 - Episodio: 249/800 | Reward:  254.31 | Temp: 0.082 | MA (100 ep):  165.86
 2026-04-15 20:26:44,633 - Episodio: 250/800 | Reward:  229.41 | Temp: 0.081 | MA (100 ep):  168.08
 2026-04-15 20:26:44,633 - --- Inizio Evaluation run all'Episodio 250 ---
-2026-04-15 20:26:50,251 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):  233.04 ± 63.53 ***
+2026-04-15 20:26:50,251 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):  233.04 Â± 63.53 ***
 2026-04-15 20:26:50,251 - --- Fine Evaluation ---
 2026-04-15 20:26:51,034 - Episodio: 251/800 | Reward:  270.97 | Temp: 0.080 | MA (100 ep):  168.45
 2026-04-15 20:26:52,118 - Episodio: 252/800 | Reward:  279.43 | Temp: 0.079 | MA (100 ep):  169.30
@@ -2016,7 +2016,7 @@
 2026-04-15 20:27:48,252 - Episodio: 299/800 | Reward:  148.74 | Temp: 0.050 | MA (100 ep):  224.27
 2026-04-15 20:27:50,810 - Episodio: 300/800 | Reward:  191.31 | Temp: 0.049 | MA (100 ep):  223.24
 2026-04-15 20:27:50,810 - --- Inizio Evaluation run all'Episodio 300 ---
-2026-04-15 20:27:55,081 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  253.85 ± 41.81 ***
+2026-04-15 20:27:55,081 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  253.85 Â± 41.81 ***
 2026-04-15 20:27:55,081 - --- Fine Evaluation ---
 2026-04-15 20:27:56,191 - Episodio: 301/800 | Reward:  249.42 | Temp: 0.049 | MA (100 ep):  226.47
 2026-04-15 20:27:57,097 - Episodio: 302/800 | Reward:  241.41 | Temp: 0.048 | MA (100 ep):  226.77
@@ -2069,7 +2069,7 @@
 2026-04-15 20:28:44,919 - Episodio: 349/800 | Reward:  297.13 | Temp: 0.030 | MA (100 ep):  248.42
 2026-04-15 20:28:45,788 - Episodio: 350/800 | Reward:  261.33 | Temp: 0.030 | MA (100 ep):  248.74
 2026-04-15 20:28:45,788 - --- Inizio Evaluation run all'Episodio 350 ---
-2026-04-15 20:28:49,171 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  267.13 ± 27.86 ***
+2026-04-15 20:28:49,171 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  267.13 Â± 27.86 ***
 2026-04-15 20:28:49,171 - --- Fine Evaluation ---
 2026-04-15 20:28:50,760 - Episodio: 351/800 | Reward:  221.37 | Temp: 0.029 | MA (100 ep):  248.25
 2026-04-15 20:28:51,517 - Episodio: 352/800 | Reward:  272.49 | Temp: 0.029 | MA (100 ep):  248.18
@@ -2122,7 +2122,7 @@
 2026-04-15 20:29:41,867 - Episodio: 399/800 | Reward:  283.63 | Temp: 0.018 | MA (100 ep):  252.27
 2026-04-15 20:29:42,591 - Episodio: 400/800 | Reward:  249.14 | Temp: 0.018 | MA (100 ep):  252.85
 2026-04-15 20:29:42,591 - --- Inizio Evaluation run all'Episodio 400 ---
-2026-04-15 20:29:46,641 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  246.62 ± 68.92 ***
+2026-04-15 20:29:46,641 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  246.62 Â± 68.92 ***
 2026-04-15 20:29:46,641 - --- Fine Evaluation ---
 2026-04-15 20:29:47,699 - Episodio: 401/800 | Reward:  254.33 | Temp: 0.018 | MA (100 ep):  252.90
 2026-04-15 20:29:48,333 - Episodio: 402/800 | Reward:  250.63 | Temp: 0.018 | MA (100 ep):  252.99
@@ -2175,7 +2175,7 @@
 2026-04-15 20:30:36,197 - Episodio: 449/800 | Reward:  281.41 | Temp: 0.011 | MA (100 ep):  260.15
 2026-04-15 20:30:37,002 - Episodio: 450/800 | Reward:  271.90 | Temp: 0.011 | MA (100 ep):  260.25
 2026-04-15 20:30:37,002 - --- Inizio Evaluation run all'Episodio 450 ---
-2026-04-15 20:30:40,351 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  270.47 ± 22.17 ***
+2026-04-15 20:30:40,351 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  270.47 Â± 22.17 ***
 2026-04-15 20:30:40,351 - --- Fine Evaluation ---
 2026-04-15 20:30:41,000 - Episodio: 451/800 | Reward:  249.49 | Temp: 0.011 | MA (100 ep):  260.54
 2026-04-15 20:30:41,848 - Episodio: 452/800 | Reward:  286.76 | Temp: 0.011 | MA (100 ep):  260.68
@@ -2228,7 +2228,7 @@
 2026-04-15 20:31:31,285 - Episodio: 499/800 | Reward:  244.68 | Temp: 0.010 | MA (100 ep):  250.41
 2026-04-15 20:31:32,124 - Episodio: 500/800 | Reward:   25.42 | Temp: 0.010 | MA (100 ep):  248.17
 2026-04-15 20:31:32,126 - --- Inizio Evaluation run all'Episodio 500 ---
-2026-04-15 20:31:36,731 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  253.93 ± 43.47 ***
+2026-04-15 20:31:36,731 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  253.93 Â± 43.47 ***
 2026-04-15 20:31:36,731 - --- Fine Evaluation ---
 2026-04-15 20:31:37,712 - Episodio: 501/800 | Reward:  267.43 | Temp: 0.010 | MA (100 ep):  248.31
 2026-04-15 20:31:38,965 - Episodio: 502/800 | Reward:  246.74 | Temp: 0.010 | MA (100 ep):  248.27
@@ -2281,7 +2281,7 @@
 2026-04-15 20:32:18,533 - Episodio: 549/800 | Reward:  250.76 | Temp: 0.010 | MA (100 ep):  239.31
 2026-04-15 20:32:19,272 - Episodio: 550/800 | Reward:  270.18 | Temp: 0.010 | MA (100 ep):  239.29
 2026-04-15 20:32:19,272 - --- Inizio Evaluation run all'Episodio 550 ---
-2026-04-15 20:32:23,026 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  240.43 ± 76.88 ***
+2026-04-15 20:32:23,026 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  240.43 Â± 76.88 ***
 2026-04-15 20:32:23,026 - --- Fine Evaluation ---
 2026-04-15 20:32:23,672 - Episodio: 551/800 | Reward:  279.44 | Temp: 0.010 | MA (100 ep):  239.59
 2026-04-15 20:32:24,997 - Episodio: 552/800 | Reward:  270.30 | Temp: 0.010 | MA (100 ep):  239.42
@@ -2334,7 +2334,7 @@
 2026-04-15 20:33:07,254 - Episodio: 599/800 | Reward:  243.66 | Temp: 0.010 | MA (100 ep):  235.19
 2026-04-15 20:33:08,093 - Episodio: 600/800 | Reward:   -2.82 | Temp: 0.010 | MA (100 ep):  234.90
 2026-04-15 20:33:08,093 - --- Inizio Evaluation run all'Episodio 600 ---
-2026-04-15 20:33:11,987 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  218.92 ± 99.22 ***
+2026-04-15 20:33:11,987 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  218.92 Â± 99.22 ***
 2026-04-15 20:33:11,987 - --- Fine Evaluation ---
 2026-04-15 20:33:13,192 - Episodio: 601/800 | Reward:  260.16 | Temp: 0.010 | MA (100 ep):  234.83
 2026-04-15 20:33:13,849 - Episodio: 602/800 | Reward:  260.29 | Temp: 0.010 | MA (100 ep):  234.97
@@ -2387,7 +2387,7 @@
 2026-04-15 20:33:57,598 - Episodio: 649/800 | Reward:  283.55 | Temp: 0.010 | MA (100 ep):  225.39
 2026-04-15 20:33:58,591 - Episodio: 650/800 | Reward:  242.02 | Temp: 0.010 | MA (100 ep):  225.11
 2026-04-15 20:33:58,591 - --- Inizio Evaluation run all'Episodio 650 ---
-2026-04-15 20:34:03,187 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  250.79 ± 60.50 ***
+2026-04-15 20:34:03,187 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  250.79 Â± 60.50 ***
 2026-04-15 20:34:03,187 - --- Fine Evaluation ---
 2026-04-15 20:34:03,937 - Episodio: 651/800 | Reward:  273.38 | Temp: 0.010 | MA (100 ep):  225.05
 2026-04-15 20:34:04,823 - Episodio: 652/800 | Reward:  255.29 | Temp: 0.010 | MA (100 ep):  224.90
@@ -2440,7 +2440,7 @@
 2026-04-15 20:34:47,260 - Episodio: 699/800 | Reward:  300.78 | Temp: 0.010 | MA (100 ep):  241.40
 2026-04-15 20:34:48,161 - Episodio: 700/800 | Reward:  299.83 | Temp: 0.010 | MA (100 ep):  244.42
 2026-04-15 20:34:48,161 - --- Inizio Evaluation run all'Episodio 700 ---
-2026-04-15 20:34:51,881 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  262.79 ± 34.06 ***
+2026-04-15 20:34:51,881 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  262.79 Â± 34.06 ***
 2026-04-15 20:34:51,881 - --- Fine Evaluation ---
 2026-04-15 20:34:52,735 - Episodio: 701/800 | Reward:  277.56 | Temp: 0.010 | MA (100 ep):  244.60
 2026-04-15 20:34:54,105 - Episodio: 702/800 | Reward:  287.01 | Temp: 0.010 | MA (100 ep):  244.87
@@ -2493,7 +2493,7 @@
 2026-04-15 20:35:36,754 - Episodio: 749/800 | Reward:  240.16 | Temp: 0.010 | MA (100 ep):  261.84
 2026-04-15 20:35:37,475 - Episodio: 750/800 | Reward:  221.38 | Temp: 0.010 | MA (100 ep):  261.63
 2026-04-15 20:35:37,491 - --- Inizio Evaluation run all'Episodio 750 ---
-2026-04-15 20:35:40,918 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  247.88 ± 79.99 ***
+2026-04-15 20:35:40,918 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  247.88 Â± 79.99 ***
 2026-04-15 20:35:40,918 - --- Fine Evaluation ---
 2026-04-15 20:35:41,769 - Episodio: 751/800 | Reward:  209.78 | Temp: 0.010 | MA (100 ep):  261.00
 2026-04-15 20:35:42,776 - Episodio: 752/800 | Reward:  249.42 | Temp: 0.010 | MA (100 ep):  260.94
@@ -2546,7 +2546,7 @@
 2026-04-15 20:36:21,303 - Episodio: 799/800 | Reward:  278.10 | Temp: 0.010 | MA (100 ep):  256.90
 2026-04-15 20:36:22,248 - Episodio: 800/800 | Reward:  272.00 | Temp: 0.010 | MA (100 ep):  256.62
 2026-04-15 20:36:22,248 - --- Inizio Evaluation run all'Episodio 800 ---
-2026-04-15 20:36:25,735 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  222.72 ± 113.72 ***
+2026-04-15 20:36:25,735 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  222.72 Â± 113.72 ***
 2026-04-15 20:36:25,735 - --- Fine Evaluation ---
 2026-04-15 20:36:25,738 - Model run 3 saved in temp/model_q_learning_run3_20260415_193906.pth.
 2026-04-15 20:36:25,738 - ========== INIZIO RUN 4/5 ==========
@@ -2601,7 +2601,7 @@
 2026-04-15 20:37:02,404 - Episodio: 049/800 | Reward:  -26.60 | Temp: 0.611 | MA (100 ep): -144.43
 2026-04-15 20:37:03,928 - Episodio: 050/800 | Reward:  -29.27 | Temp: 0.605 | MA (100 ep): -142.13
 2026-04-15 20:37:03,928 - --- Inizio Evaluation run all'Episodio 50 ---
-2026-04-15 20:37:15,307 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run):  -99.74 ± 54.22 ***
+2026-04-15 20:37:15,307 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run):  -99.74 Â± 54.22 ***
 2026-04-15 20:37:15,307 - --- Fine Evaluation ---
 2026-04-15 20:37:16,074 - Episodio: 051/800 | Reward:  -23.98 | Temp: 0.599 | MA (100 ep): -139.81
 2026-04-15 20:37:16,485 - Episodio: 052/800 | Reward:  -41.47 | Temp: 0.593 | MA (100 ep): -137.92
@@ -2654,7 +2654,7 @@
 2026-04-15 20:39:13,598 - Episodio: 099/800 | Reward:    0.32 | Temp: 0.370 | MA (100 ep):  -80.49
 2026-04-15 20:39:14,346 - Episodio: 100/800 | Reward:   26.24 | Temp: 0.366 | MA (100 ep):  -79.43
 2026-04-15 20:39:14,346 - --- Inizio Evaluation run all'Episodio 100 ---
-2026-04-15 20:39:23,014 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -55.30 ± 81.56 ***
+2026-04-15 20:39:23,014 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -55.30 Â± 81.56 ***
 2026-04-15 20:39:23,014 - --- Fine Evaluation ---
 2026-04-15 20:39:26,530 - Episodio: 101/800 | Reward:   10.61 | Temp: 0.362 | MA (100 ep):  -78.66
 2026-04-15 20:39:30,056 - Episodio: 102/800 | Reward:  -31.54 | Temp: 0.359 | MA (100 ep):  -77.73
@@ -2707,7 +2707,7 @@
 2026-04-15 20:41:52,926 - Episodio: 149/800 | Reward:   40.43 | Temp: 0.224 | MA (100 ep):    3.84
 2026-04-15 20:41:55,755 - Episodio: 150/800 | Reward:  167.05 | Temp: 0.221 | MA (100 ep):    5.81
 2026-04-15 20:41:55,755 - --- Inizio Evaluation run all'Episodio 150 ---
-2026-04-15 20:42:02,093 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):  164.42 ± 141.35 ***
+2026-04-15 20:42:02,093 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):  164.42 Â± 141.35 ***
 2026-04-15 20:42:02,093 - --- Fine Evaluation ---
 2026-04-15 20:42:04,494 - Episodio: 151/800 | Reward:  184.60 | Temp: 0.219 | MA (100 ep):    7.89
 2026-04-15 20:42:07,838 - Episodio: 152/800 | Reward:  171.46 | Temp: 0.217 | MA (100 ep):   10.02
@@ -2760,7 +2760,7 @@
 2026-04-15 20:43:05,095 - Episodio: 199/800 | Reward:  269.28 | Temp: 0.135 | MA (100 ep):   98.18
 2026-04-15 20:43:08,629 - Episodio: 200/800 | Reward:  152.33 | Temp: 0.134 | MA (100 ep):   99.44
 2026-04-15 20:43:08,629 - --- Inizio Evaluation run all'Episodio 200 ---
-2026-04-15 20:43:11,697 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):   73.47 ± 160.09 ***
+2026-04-15 20:43:11,697 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):   73.47 Â± 160.09 ***
 2026-04-15 20:43:11,697 - --- Fine Evaluation ---
 2026-04-15 20:43:12,212 - Episodio: 201/800 | Reward:   36.83 | Temp: 0.133 | MA (100 ep):   99.71
 2026-04-15 20:43:13,574 - Episodio: 202/800 | Reward:  283.63 | Temp: 0.131 | MA (100 ep):  102.86
@@ -2813,7 +2813,7 @@
 2026-04-15 20:43:52,086 - Episodio: 249/800 | Reward: -116.05 | Temp: 0.082 | MA (100 ep):   86.75
 2026-04-15 20:43:55,602 - Episodio: 250/800 | Reward:   41.87 | Temp: 0.081 | MA (100 ep):   85.50
 2026-04-15 20:43:55,602 - --- Inizio Evaluation run all'Episodio 250 ---
-2026-04-15 20:43:58,615 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):   77.62 ± 153.44 ***
+2026-04-15 20:43:58,615 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):   77.62 Â± 153.44 ***
 2026-04-15 20:43:58,615 - --- Fine Evaluation ---
 2026-04-15 20:43:59,343 - Episodio: 251/800 | Reward:  231.32 | Temp: 0.080 | MA (100 ep):   85.96
 2026-04-15 20:43:59,776 - Episodio: 252/800 | Reward:    4.44 | Temp: 0.079 | MA (100 ep):   84.29
@@ -2866,7 +2866,7 @@
 2026-04-15 20:44:53,007 - Episodio: 299/800 | Reward:  267.77 | Temp: 0.050 | MA (100 ep):   80.58
 2026-04-15 20:44:53,789 - Episodio: 300/800 | Reward:  281.63 | Temp: 0.049 | MA (100 ep):   81.87
 2026-04-15 20:44:53,789 - --- Inizio Evaluation run all'Episodio 300 ---
-2026-04-15 20:44:59,453 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  196.84 ± 116.70 ***
+2026-04-15 20:44:59,453 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  196.84 Â± 116.70 ***
 2026-04-15 20:44:59,453 - --- Fine Evaluation ---
 2026-04-15 20:45:00,728 - Episodio: 301/800 | Reward:  206.51 | Temp: 0.049 | MA (100 ep):   83.56
 2026-04-15 20:45:04,071 - Episodio: 302/800 | Reward:  -24.66 | Temp: 0.048 | MA (100 ep):   80.48
@@ -2919,7 +2919,7 @@
 2026-04-15 20:46:07,889 - Episodio: 349/800 | Reward:  233.69 | Temp: 0.030 | MA (100 ep):  175.79
 2026-04-15 20:46:08,695 - Episodio: 350/800 | Reward:  259.24 | Temp: 0.030 | MA (100 ep):  177.97
 2026-04-15 20:46:08,695 - --- Inizio Evaluation run all'Episodio 350 ---
-2026-04-15 20:46:13,075 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  248.25 ± 61.45 ***
+2026-04-15 20:46:13,075 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  248.25 Â± 61.45 ***
 2026-04-15 20:46:13,075 - --- Fine Evaluation ---
 2026-04-15 20:46:14,128 - Episodio: 351/800 | Reward:  276.71 | Temp: 0.029 | MA (100 ep):  178.42
 2026-04-15 20:46:15,450 - Episodio: 352/800 | Reward:  269.57 | Temp: 0.029 | MA (100 ep):  181.07
@@ -2972,7 +2972,7 @@
 2026-04-15 20:47:02,767 - Episodio: 399/800 | Reward:  273.87 | Temp: 0.018 | MA (100 ep):  225.95
 2026-04-15 20:47:03,536 - Episodio: 400/800 | Reward:  242.15 | Temp: 0.018 | MA (100 ep):  225.55
 2026-04-15 20:47:03,536 - --- Inizio Evaluation run all'Episodio 400 ---
-2026-04-15 20:47:07,803 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  238.44 ± 133.81 ***
+2026-04-15 20:47:07,803 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  238.44 Â± 133.81 ***
 2026-04-15 20:47:07,803 - --- Fine Evaluation ---
 2026-04-15 20:47:08,761 - Episodio: 401/800 | Reward:  287.02 | Temp: 0.018 | MA (100 ep):  226.36
 2026-04-15 20:47:09,696 - Episodio: 402/800 | Reward:  295.94 | Temp: 0.018 | MA (100 ep):  229.57
@@ -3025,7 +3025,7 @@
 2026-04-15 20:48:02,600 - Episodio: 449/800 | Reward:  265.68 | Temp: 0.011 | MA (100 ep):  256.00
 2026-04-15 20:48:03,533 - Episodio: 450/800 | Reward:  231.40 | Temp: 0.011 | MA (100 ep):  255.72
 2026-04-15 20:48:03,533 - --- Inizio Evaluation run all'Episodio 450 ---
-2026-04-15 20:48:06,888 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  235.14 ± 89.97 ***
+2026-04-15 20:48:06,888 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  235.14 Â± 89.97 ***
 2026-04-15 20:48:06,888 - --- Fine Evaluation ---
 2026-04-15 20:48:08,311 - Episodio: 451/800 | Reward:  273.69 | Temp: 0.011 | MA (100 ep):  255.69
 2026-04-15 20:48:09,379 - Episodio: 452/800 | Reward:  294.05 | Temp: 0.011 | MA (100 ep):  255.93
@@ -3078,7 +3078,7 @@
 2026-04-15 20:48:53,850 - Episodio: 499/800 | Reward:    2.62 | Temp: 0.010 | MA (100 ep):  243.80
 2026-04-15 20:48:54,796 - Episodio: 500/800 | Reward:  224.74 | Temp: 0.010 | MA (100 ep):  243.63
 2026-04-15 20:48:54,796 - --- Inizio Evaluation run all'Episodio 500 ---
-2026-04-15 20:48:58,725 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  241.75 ± 70.53 ***
+2026-04-15 20:48:58,725 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  241.75 Â± 70.53 ***
 2026-04-15 20:48:58,725 - --- Fine Evaluation ---
 2026-04-15 20:48:59,448 - Episodio: 501/800 | Reward:  243.58 | Temp: 0.010 | MA (100 ep):  243.19
 2026-04-15 20:49:00,473 - Episodio: 502/800 | Reward:  259.61 | Temp: 0.010 | MA (100 ep):  242.83
@@ -3131,7 +3131,7 @@
 2026-04-15 20:49:43,165 - Episodio: 549/800 | Reward:  278.31 | Temp: 0.010 | MA (100 ep):  236.14
 2026-04-15 20:49:43,991 - Episodio: 550/800 | Reward:  225.42 | Temp: 0.010 | MA (100 ep):  236.08
 2026-04-15 20:49:43,991 - --- Inizio Evaluation run all'Episodio 550 ---
-2026-04-15 20:49:48,835 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  204.97 ± 112.10 ***
+2026-04-15 20:49:48,835 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  204.97 Â± 112.10 ***
 2026-04-15 20:49:48,835 - --- Fine Evaluation ---
 2026-04-15 20:49:49,751 - Episodio: 551/800 | Reward:  266.36 | Temp: 0.010 | MA (100 ep):  236.01
 2026-04-15 20:49:50,421 - Episodio: 552/800 | Reward:   44.54 | Temp: 0.010 | MA (100 ep):  233.52
@@ -3184,7 +3184,7 @@
 2026-04-15 20:50:32,035 - Episodio: 599/800 | Reward:  277.74 | Temp: 0.010 | MA (100 ep):  227.07
 2026-04-15 20:50:33,986 - Episodio: 600/800 | Reward:  232.36 | Temp: 0.010 | MA (100 ep):  227.15
 2026-04-15 20:50:33,986 - --- Inizio Evaluation run all'Episodio 600 ---
-2026-04-15 20:50:39,167 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  213.10 ± 105.40 ***
+2026-04-15 20:50:39,167 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  213.10 Â± 105.40 ***
 2026-04-15 20:50:39,167 - --- Fine Evaluation ---
 2026-04-15 20:50:39,964 - Episodio: 601/800 | Reward:  255.72 | Temp: 0.010 | MA (100 ep):  227.27
 2026-04-15 20:50:40,693 - Episodio: 602/800 | Reward:  284.82 | Temp: 0.010 | MA (100 ep):  227.52
@@ -3237,7 +3237,7 @@
 2026-04-15 20:51:21,314 - Episodio: 649/800 | Reward:  291.07 | Temp: 0.010 | MA (100 ep):  232.38
 2026-04-15 20:51:22,031 - Episodio: 650/800 | Reward:  255.33 | Temp: 0.010 | MA (100 ep):  232.68
 2026-04-15 20:51:22,031 - --- Inizio Evaluation run all'Episodio 650 ---
-2026-04-15 20:51:25,310 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  253.36 ± 73.21 ***
+2026-04-15 20:51:25,310 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  253.36 Â± 73.21 ***
 2026-04-15 20:51:25,310 - --- Fine Evaluation ---
 2026-04-15 20:51:25,975 - Episodio: 651/800 | Reward:  241.00 | Temp: 0.010 | MA (100 ep):  232.43
 2026-04-15 20:51:26,559 - Episodio: 652/800 | Reward:   48.72 | Temp: 0.010 | MA (100 ep):  232.47
@@ -3290,7 +3290,7 @@
 2026-04-15 20:52:03,803 - Episodio: 699/800 | Reward:  287.14 | Temp: 0.010 | MA (100 ep):  235.49
 2026-04-15 20:52:04,504 - Episodio: 700/800 | Reward:  250.34 | Temp: 0.010 | MA (100 ep):  235.67
 2026-04-15 20:52:04,504 - --- Inizio Evaluation run all'Episodio 700 ---
-2026-04-15 20:52:07,742 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  242.59 ± 93.35 ***
+2026-04-15 20:52:07,742 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  242.59 Â± 93.35 ***
 2026-04-15 20:52:07,742 - --- Fine Evaluation ---
 2026-04-15 20:52:08,235 - Episodio: 701/800 | Reward:   48.75 | Temp: 0.010 | MA (100 ep):  233.60
 2026-04-15 20:52:09,036 - Episodio: 702/800 | Reward:  301.34 | Temp: 0.010 | MA (100 ep):  233.77
@@ -3343,7 +3343,7 @@
 2026-04-15 20:52:46,107 - Episodio: 749/800 | Reward:  273.32 | Temp: 0.010 | MA (100 ep):  226.14
 2026-04-15 20:52:46,893 - Episodio: 750/800 | Reward:  274.05 | Temp: 0.010 | MA (100 ep):  226.33
 2026-04-15 20:52:46,893 - --- Inizio Evaluation run all'Episodio 750 ---
-2026-04-15 20:52:50,228 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  209.58 ± 113.25 ***
+2026-04-15 20:52:50,228 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  209.58 Â± 113.25 ***
 2026-04-15 20:52:50,228 - --- Fine Evaluation ---
 2026-04-15 20:52:50,976 - Episodio: 751/800 | Reward:  265.17 | Temp: 0.010 | MA (100 ep):  226.57
 2026-04-15 20:52:51,604 - Episodio: 752/800 | Reward:  267.51 | Temp: 0.010 | MA (100 ep):  228.76
@@ -3396,7 +3396,7 @@
 2026-04-15 20:53:26,987 - Episodio: 799/800 | Reward:  -53.53 | Temp: 0.010 | MA (100 ep):  214.40
 2026-04-15 20:53:28,443 - Episodio: 800/800 | Reward:  248.04 | Temp: 0.010 | MA (100 ep):  214.38
 2026-04-15 20:53:28,443 - --- Inizio Evaluation run all'Episodio 800 ---
-2026-04-15 20:53:31,580 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  241.40 ± 128.47 ***
+2026-04-15 20:53:31,580 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  241.40 Â± 128.47 ***
 2026-04-15 20:53:31,580 - --- Fine Evaluation ---
 2026-04-15 20:53:31,580 - Model run 4 saved in temp/model_q_learning_run4_20260415_193906.pth.
 2026-04-15 20:53:31,580 - ========== INIZIO RUN 5/5 ==========
@@ -3451,7 +3451,7 @@
 2026-04-15 20:54:10,964 - Episodio: 049/800 | Reward:  -23.31 | Temp: 0.611 | MA (100 ep): -163.43
 2026-04-15 20:54:14,152 - Episodio: 050/800 | Reward:    0.20 | Temp: 0.605 | MA (100 ep): -160.15
 2026-04-15 20:54:14,152 - --- Inizio Evaluation run all'Episodio 50 ---
-2026-04-15 20:54:27,301 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run):  -81.36 ± 86.42 ***
+2026-04-15 20:54:27,301 - *** EVALUATION | Epi: 050 | Mean Reward (50 Run):  -81.36 Â± 86.42 ***
 2026-04-15 20:54:27,301 - --- Fine Evaluation ---
 2026-04-15 20:54:28,100 - Episodio: 051/800 | Reward:  -32.40 | Temp: 0.599 | MA (100 ep): -157.65
 2026-04-15 20:54:31,385 - Episodio: 052/800 | Reward:  -14.00 | Temp: 0.593 | MA (100 ep): -154.89
@@ -3504,7 +3504,7 @@
 2026-04-15 20:56:50,891 - Episodio: 099/800 | Reward:  -47.92 | Temp: 0.370 | MA (100 ep): -115.11
 2026-04-15 20:56:54,359 - Episodio: 100/800 | Reward:  -18.26 | Temp: 0.366 | MA (100 ep): -114.14
 2026-04-15 20:56:54,359 - --- Inizio Evaluation run all'Episodio 100 ---
-2026-04-15 20:57:06,975 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -67.96 ± 31.98 ***
+2026-04-15 20:57:06,975 - *** EVALUATION | Epi: 100 | Mean Reward (50 Run):  -67.96 Â± 31.98 ***
 2026-04-15 20:57:06,975 - --- Fine Evaluation ---
 2026-04-15 20:57:07,834 - Episodio: 101/800 | Reward:  217.46 | Temp: 0.362 | MA (100 ep): -108.58
 2026-04-15 20:57:11,270 - Episodio: 102/800 | Reward:  -45.45 | Temp: 0.359 | MA (100 ep): -105.73
@@ -3557,7 +3557,7 @@
 2026-04-15 20:59:39,320 - Episodio: 149/800 | Reward:  -11.36 | Temp: 0.224 | MA (100 ep):  -36.25
 2026-04-15 20:59:42,980 - Episodio: 150/800 | Reward:  -30.85 | Temp: 0.221 | MA (100 ep):  -36.56
 2026-04-15 20:59:42,980 - --- Inizio Evaluation run all'Episodio 150 ---
-2026-04-15 20:59:56,227 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):  -37.62 ± 48.02 ***
+2026-04-15 20:59:56,227 - *** EVALUATION | Epi: 150 | Mean Reward (50 Run):  -37.62 Â± 48.02 ***
 2026-04-15 20:59:56,227 - --- Fine Evaluation ---
 2026-04-15 20:59:59,610 - Episodio: 151/800 | Reward:  -33.13 | Temp: 0.219 | MA (100 ep):  -36.57
 2026-04-15 21:00:03,988 - Episodio: 152/800 | Reward:  -74.44 | Temp: 0.217 | MA (100 ep):  -37.18
@@ -3610,7 +3610,7 @@
 2026-04-15 21:01:40,680 - Episodio: 199/800 | Reward:  228.67 | Temp: 0.135 | MA (100 ep):   54.50
 2026-04-15 21:01:42,415 - Episodio: 200/800 | Reward:  169.16 | Temp: 0.134 | MA (100 ep):   56.37
 2026-04-15 21:01:42,415 - --- Inizio Evaluation run all'Episodio 200 ---
-2026-04-15 21:01:48,018 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):  204.12 ± 102.26 ***
+2026-04-15 21:01:48,018 - *** EVALUATION | Epi: 200 | Mean Reward (50 Run):  204.12 Â± 102.26 ***
 2026-04-15 21:01:48,018 - --- Fine Evaluation ---
 2026-04-15 21:01:48,950 - Episodio: 201/800 | Reward:  252.68 | Temp: 0.133 | MA (100 ep):   56.72
 2026-04-15 21:01:49,536 - Episodio: 202/800 | Reward:   50.37 | Temp: 0.131 | MA (100 ep):   57.68
@@ -3663,7 +3663,7 @@
 2026-04-15 21:02:53,777 - Episodio: 249/800 | Reward:  149.51 | Temp: 0.082 | MA (100 ep):  149.52
 2026-04-15 21:02:54,401 - Episodio: 250/800 | Reward:  252.53 | Temp: 0.081 | MA (100 ep):  152.35
 2026-04-15 21:02:54,401 - --- Inizio Evaluation run all'Episodio 250 ---
-2026-04-15 21:02:59,259 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):  198.64 ± 128.62 ***
+2026-04-15 21:02:59,259 - *** EVALUATION | Epi: 250 | Mean Reward (50 Run):  198.64 Â± 128.62 ***
 2026-04-15 21:02:59,259 - --- Fine Evaluation ---
 2026-04-15 21:03:00,241 - Episodio: 251/800 | Reward:  294.88 | Temp: 0.080 | MA (100 ep):  155.63
 2026-04-15 21:03:01,021 - Episodio: 252/800 | Reward:  253.03 | Temp: 0.079 | MA (100 ep):  158.90
@@ -3716,7 +3716,7 @@
 2026-04-15 21:03:54,240 - Episodio: 299/800 | Reward:  255.92 | Temp: 0.050 | MA (100 ep):  208.51
 2026-04-15 21:03:54,799 - Episodio: 300/800 | Reward:  274.80 | Temp: 0.049 | MA (100 ep):  209.57
 2026-04-15 21:03:54,799 - --- Inizio Evaluation run all'Episodio 300 ---
-2026-04-15 21:03:59,440 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  232.43 ± 84.36 ***
+2026-04-15 21:03:59,440 - *** EVALUATION | Epi: 300 | Mean Reward (50 Run):  232.43 Â± 84.36 ***
 2026-04-15 21:03:59,440 - --- Fine Evaluation ---
 2026-04-15 21:04:00,056 - Episodio: 301/800 | Reward:  273.00 | Temp: 0.049 | MA (100 ep):  209.77
 2026-04-15 21:04:00,686 - Episodio: 302/800 | Reward:  247.62 | Temp: 0.048 | MA (100 ep):  211.75
@@ -3769,7 +3769,7 @@
 2026-04-15 21:04:43,267 - Episodio: 349/800 | Reward:  232.67 | Temp: 0.030 | MA (100 ep):  247.80
 2026-04-15 21:04:43,851 - Episodio: 350/800 | Reward:  276.40 | Temp: 0.030 | MA (100 ep):  248.04
 2026-04-15 21:04:43,851 - --- Inizio Evaluation run all'Episodio 350 ---
-2026-04-15 21:04:46,492 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  238.62 ± 85.82 ***
+2026-04-15 21:04:46,492 - *** EVALUATION | Epi: 350 | Mean Reward (50 Run):  238.62 Â± 85.82 ***
 2026-04-15 21:04:46,492 - --- Fine Evaluation ---
 2026-04-15 21:04:46,986 - Episodio: 351/800 | Reward:  282.39 | Temp: 0.029 | MA (100 ep):  247.91
 2026-04-15 21:04:47,615 - Episodio: 352/800 | Reward:   52.48 | Temp: 0.029 | MA (100 ep):  245.91
@@ -3822,7 +3822,7 @@
 2026-04-15 21:05:27,739 - Episodio: 399/800 | Reward:  -19.45 | Temp: 0.018 | MA (100 ep):  252.88
 2026-04-15 21:05:28,355 - Episodio: 400/800 | Reward:  265.79 | Temp: 0.018 | MA (100 ep):  252.79
 2026-04-15 21:05:28,355 - --- Inizio Evaluation run all'Episodio 400 ---
-2026-04-15 21:05:31,305 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  205.12 ± 121.50 ***
+2026-04-15 21:05:31,305 - *** EVALUATION | Epi: 400 | Mean Reward (50 Run):  205.12 Â± 121.50 ***
 2026-04-15 21:05:31,307 - --- Fine Evaluation ---
 2026-04-15 21:05:32,007 - Episodio: 401/800 | Reward:  273.17 | Temp: 0.018 | MA (100 ep):  252.79
 2026-04-15 21:05:32,780 - Episodio: 402/800 | Reward:  286.57 | Temp: 0.018 | MA (100 ep):  253.18
@@ -3875,7 +3875,7 @@
 2026-04-15 21:06:05,889 - Episodio: 449/800 | Reward:  291.68 | Temp: 0.011 | MA (100 ep):  245.78
 2026-04-15 21:06:06,737 - Episodio: 450/800 | Reward:  243.93 | Temp: 0.011 | MA (100 ep):  245.45
 2026-04-15 21:06:06,737 - --- Inizio Evaluation run all'Episodio 450 ---
-2026-04-15 21:06:09,612 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  255.22 ± 77.97 ***
+2026-04-15 21:06:09,612 - *** EVALUATION | Epi: 450 | Mean Reward (50 Run):  255.22 Â± 77.97 ***
 2026-04-15 21:06:09,612 - --- Fine Evaluation ---
 2026-04-15 21:06:10,785 - Episodio: 451/800 | Reward:  225.53 | Temp: 0.011 | MA (100 ep):  244.88
 2026-04-15 21:06:11,470 - Episodio: 452/800 | Reward:  288.11 | Temp: 0.011 | MA (100 ep):  247.24
@@ -3928,7 +3928,7 @@
 2026-04-15 21:06:50,873 - Episodio: 499/800 | Reward:  243.54 | Temp: 0.010 | MA (100 ep):  242.92
 2026-04-15 21:06:51,622 - Episodio: 500/800 | Reward:  259.27 | Temp: 0.010 | MA (100 ep):  242.86
 2026-04-15 21:06:51,622 - --- Inizio Evaluation run all'Episodio 500 ---
-2026-04-15 21:06:55,204 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  230.48 ± 99.95 ***
+2026-04-15 21:06:55,204 - *** EVALUATION | Epi: 500 | Mean Reward (50 Run):  230.48 Â± 99.95 ***
 2026-04-15 21:06:55,204 - --- Fine Evaluation ---
 2026-04-15 21:06:55,771 - Episodio: 501/800 | Reward:  288.52 | Temp: 0.010 | MA (100 ep):  243.01
 2026-04-15 21:06:56,399 - Episodio: 502/800 | Reward:  282.54 | Temp: 0.010 | MA (100 ep):  242.97
@@ -3981,7 +3981,7 @@
 2026-04-15 21:07:39,268 - Episodio: 549/800 | Reward:  228.53 | Temp: 0.010 | MA (100 ep):  245.68
 2026-04-15 21:07:39,837 - Episodio: 550/800 | Reward:  252.51 | Temp: 0.010 | MA (100 ep):  245.77
 2026-04-15 21:07:39,853 - --- Inizio Evaluation run all'Episodio 550 ---
-2026-04-15 21:07:43,445 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  260.32 ± 80.65 ***
+2026-04-15 21:07:43,445 - *** EVALUATION | Epi: 550 | Mean Reward (50 Run):  260.32 Â± 80.65 ***
 2026-04-15 21:07:43,445 - --- Fine Evaluation ---
 2026-04-15 21:07:44,489 - Episodio: 551/800 | Reward:  257.22 | Temp: 0.010 | MA (100 ep):  246.09
 2026-04-15 21:07:45,867 - Episodio: 552/800 | Reward:  137.18 | Temp: 0.010 | MA (100 ep):  244.58
@@ -4034,7 +4034,7 @@
 2026-04-15 21:08:26,714 - Episodio: 599/800 | Reward:  291.29 | Temp: 0.010 | MA (100 ep):  238.81
 2026-04-15 21:08:27,573 - Episodio: 600/800 | Reward:  273.85 | Temp: 0.010 | MA (100 ep):  238.95
 2026-04-15 21:08:27,573 - --- Inizio Evaluation run all'Episodio 600 ---
-2026-04-15 21:08:30,495 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  162.00 ± 115.28 ***
+2026-04-15 21:08:30,495 - *** EVALUATION | Epi: 600 | Mean Reward (50 Run):  162.00 Â± 115.28 ***
 2026-04-15 21:08:30,495 - --- Fine Evaluation ---
 2026-04-15 21:08:31,158 - Episodio: 601/800 | Reward:  255.83 | Temp: 0.010 | MA (100 ep):  238.63
 2026-04-15 21:08:31,877 - Episodio: 602/800 | Reward:  233.61 | Temp: 0.010 | MA (100 ep):  238.14
@@ -4087,7 +4087,7 @@
 2026-04-15 21:09:09,544 - Episodio: 649/800 | Reward:  155.44 | Temp: 0.010 | MA (100 ep):  209.90
 2026-04-15 21:09:09,925 - Episodio: 650/800 | Reward:   39.99 | Temp: 0.010 | MA (100 ep):  207.78
 2026-04-15 21:09:09,925 - --- Inizio Evaluation run all'Episodio 650 ---
-2026-04-15 21:09:13,337 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  170.70 ± 130.08 ***
+2026-04-15 21:09:13,337 - *** EVALUATION | Epi: 650 | Mean Reward (50 Run):  170.70 Â± 130.08 ***
 2026-04-15 21:09:13,339 - --- Fine Evaluation ---
 2026-04-15 21:09:13,803 - Episodio: 651/800 | Reward:   26.11 | Temp: 0.010 | MA (100 ep):  205.47
 2026-04-15 21:09:14,156 - Episodio: 652/800 | Reward:   18.71 | Temp: 0.010 | MA (100 ep):  204.28
@@ -4140,7 +4140,7 @@
 2026-04-15 21:09:46,624 - Episodio: 699/800 | Reward:   12.90 | Temp: 0.010 | MA (100 ep):  179.76
 2026-04-15 21:09:47,374 - Episodio: 700/800 | Reward:  275.37 | Temp: 0.010 | MA (100 ep):  179.77
 2026-04-15 21:09:47,374 - --- Inizio Evaluation run all'Episodio 700 ---
-2026-04-15 21:09:50,225 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  116.82 ± 134.54 ***
+2026-04-15 21:09:50,225 - *** EVALUATION | Epi: 700 | Mean Reward (50 Run):  116.82 Â± 134.54 ***
 2026-04-15 21:09:50,225 - --- Fine Evaluation ---
 2026-04-15 21:09:50,559 - Episodio: 701/800 | Reward:  -54.20 | Temp: 0.010 | MA (100 ep):  176.67
 2026-04-15 21:09:51,355 - Episodio: 702/800 | Reward:  285.78 | Temp: 0.010 | MA (100 ep):  177.20
@@ -4193,7 +4193,7 @@
 2026-04-15 21:10:28,929 - Episodio: 749/800 | Reward:  262.43 | Temp: 0.010 | MA (100 ep):  171.25
 2026-04-15 21:10:29,539 - Episodio: 750/800 | Reward:  304.21 | Temp: 0.010 | MA (100 ep):  173.89
 2026-04-15 21:10:29,539 - --- Inizio Evaluation run all'Episodio 750 ---
-2026-04-15 21:10:32,994 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  256.68 ± 60.72 ***
+2026-04-15 21:10:32,994 - *** EVALUATION | Epi: 750 | Mean Reward (50 Run):  256.68 Â± 60.72 ***
 2026-04-15 21:10:32,994 - --- Fine Evaluation ---
 2026-04-15 21:10:33,709 - Episodio: 751/800 | Reward:  277.85 | Temp: 0.010 | MA (100 ep):  176.41
 2026-04-15 21:10:34,449 - Episodio: 752/800 | Reward:  299.33 | Temp: 0.010 | MA (100 ep):  179.21
@@ -4246,7 +4246,7 @@
 2026-04-15 21:11:05,708 - Episodio: 799/800 | Reward:  274.72 | Temp: 0.010 | MA (100 ep):  190.19
 2026-04-15 21:11:06,443 - Episodio: 800/800 | Reward:  308.30 | Temp: 0.010 | MA (100 ep):  190.52
 2026-04-15 21:11:06,443 - --- Inizio Evaluation run all'Episodio 800 ---
-2026-04-15 21:11:09,990 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  241.81 ± 87.52 ***
+2026-04-15 21:11:09,990 - *** EVALUATION | Epi: 800 | Mean Reward (50 Run):  241.81 Â± 87.52 ***
 2026-04-15 21:11:09,990 - --- Fine Evaluation ---
 2026-04-15 21:11:09,992 - Model run 5 saved in temp/model_q_learning_run5_20260415_193906.pth.
 2026-04-15 21:11:10,429 - Plot saved in: temp/reward_plot_q_learning_20260415_193906.png
