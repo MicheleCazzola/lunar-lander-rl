@@ -11,7 +11,7 @@ import warnings
 
 # Suppress pkg_resources deprecation warning originating from pygame/gymnasium
 warnings.filterwarnings("ignore", category=UserWarning, module="pygame.pkgdata")
-from src.agent import LanderAgent
+from src.agent import LanderAgent, ActorCriticAgent
 from src.utils import plot_training_curve, set_seed, set_default_config, setup_logger
 from src.train import train_agent
 
@@ -24,22 +24,44 @@ def single_run(run, cfg, timestamp):
     action_dim = env_run.action_space.n
     
     # Agent initialization
-    agent = LanderAgent(
-        state_dim, 
-        action_dim, 
-        algorithm=cfg.algorithm,
-        double_learning=cfg.double,
-        lr=cfg.lr,
-        gamma=cfg.gamma,
-        tau=cfg.tau,
-        batch_size=cfg.batch_size,
-        buffer_capacity=cfg.buffer_capacity,
-        hidden_size=cfg.hidden_size,
-        loss=cfg.loss,
-        temp_init=cfg.temp_init,
-        temp_min=cfg.temp_min,
-        temp_decay=cfg.temp_decay
-    )
+    if cfg.algorithm == "softmax_actor_critic":
+        # Resolve actor/critic specific learning rates or fallback to base lr
+        lr_actor = getattr(cfg, 'lr_actor', cfg.lr)
+        lr_critic = getattr(cfg, 'lr_critic', cfg.lr)
+        
+        agent = ActorCriticAgent(
+            state_dim, 
+            action_dim, 
+            lr_actor=lr_actor,
+            lr_critic=lr_critic,
+            gamma=cfg.gamma,
+            tau=cfg.tau,
+            hidden_size=cfg.hidden_size,
+            loss=cfg.loss,
+            temp_init=cfg.temp_init,
+            temp_min=cfg.temp_min,
+            temp_decay=cfg.temp_decay,
+            entropy_coef=getattr(cfg, 'entropy_coef', 0.0),
+            use_average_reward=getattr(cfg, 'use_average_reward', False),
+            avg_reward_alpha=getattr(cfg, 'avg_reward_alpha', 0.01)
+        )
+    else:
+        agent = LanderAgent(
+            state_dim, 
+            action_dim, 
+            algorithm=cfg.algorithm,
+            double_learning=cfg.double,
+            lr=cfg.lr,
+            gamma=cfg.gamma,
+            tau=cfg.tau,
+            batch_size=cfg.batch_size,
+            buffer_capacity=cfg.buffer_capacity,
+            hidden_size=cfg.hidden_size,
+            loss=cfg.loss,
+            temp_init=cfg.temp_init,
+            temp_min=cfg.temp_min,
+            temp_decay=cfg.temp_decay
+        )
     
     # Training loop with periodic evaluation
     rewards_list, eval_history = train_agent(
@@ -56,9 +78,15 @@ def single_run(run, cfg, timestamp):
 
     env_run.close()
     
-    # Save model for current run (needed for Ensemble or Best Seed extraction)
-    run_model_path = os.path.join(cfg.output_dir, f"model_{cfg.algorithm}_run{run}_{timestamp}.pth")
-    torch.save(agent.q_network.state_dict(), run_model_path)
+    # Save model for current run
+    run_model_path = os.path.join(cfg.output_dir, f"model_run{run}.pth")
+    if cfg.algorithm == "softmax_actor_critic":
+        torch.save({
+            'actor_state_dict': agent.actor.state_dict(),
+            'critic_state_dict': agent.critic.state_dict()
+        }, run_model_path)
+    else:
+        torch.save(agent.q_network.state_dict(), run_model_path)
     logging.info(f"Model run {run} saved in {run_model_path}.")
         
     return rewards_list, eval_history
@@ -70,13 +98,18 @@ def main():
     # Arguments from CLI and YAML config loading
     args = argparse.ArgumentParser(description="Deep RL Agent for LunarLander using PyTorch")
     args.add_argument("--from-config", type=str, default=os.path.join("config", "config.yaml"), help="YAML configuration file")
-    args.add_argument("--algorithm", type=str, choices=["q_learning", "sarsa", "expected_sarsa"], help="Overrides algorithm from config")
+    args.add_argument("--algorithm", type=str, choices=["q_learning", "sarsa", "expected_sarsa", "softmax_actor_critic"], help="Overrides algorithm from config")
     args.add_argument("--double", action='store_true', help="Use Double Q-Learning (or Double SARSA/Expected SARSA) if set")
     args.add_argument("--episodes", type=int, help="Number of training episodes")
     args.add_argument("--lr", type=float, help="Learning rate")
+    args.add_argument("--lr-actor", type=float, help="Learning rate (Actor-Critic only)")
+    args.add_argument("--lr-critic", type=float, help="Learning rate (Actor-Critic only)")
     args.add_argument("--tau", type=float, help="Soft update coefficient for target network")
     args.add_argument("--temp-decay", type=float, help="Temperature decay rate")
     args.add_argument("--temp-min", type=float, help="Minimum temperature for exploration")
+    args.add_argument("--entropy-coef", type=float, help="Coefficient for entropy regularization")
+    args.add_argument("--use-average-reward", action='store_true', help="Use average reward formulation instead of discounted")
+    args.add_argument("--avg-reward-alpha", type=float, help="Step size for average reward update")
     args.add_argument("--eval-period", type=int, help="Frequency of evaluation (in episodes)")
     args.add_argument("--eval-runs", type=int, help="Number of evaluation episodes per evaluation phase")
     args.add_argument("--runs", type=int, help="Number of independent runs for averaging results")
@@ -96,7 +129,9 @@ def main():
     
     # Setup logging
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    setup_logger(cfg, timestamp)
+    output_dir = os.path.join(cfg.output_dir, cfg.algorithm, timestamp)
+    os.makedirs(output_dir, exist_ok=True)
+    setup_logger(output_dir)
     
     logging.info(f"Starting training with algorithm: '{cfg.algorithm}'")
     
@@ -104,7 +139,7 @@ def main():
     
     # Auto-save parameters at run start
     config_data = vars(cfg)
-    config_path = os.path.join(cfg.output_dir, f"config_{cfg.algorithm}_{timestamp}.json")
+    config_path = os.path.join(output_dir, f"config.json")
     with open(config_path, 'w') as f:
         json.dump(config_data, f, indent=4)
         
@@ -124,7 +159,7 @@ def main():
     mean_train_rewards = np.mean(rewards, axis=0)
     std_train_rewards = np.std(rewards, axis=0)
     
-    plot_training_curve(mean_train_rewards, std_train_rewards, eval_means, eval_eps, cfg, timestamp)
+    plot_training_curve(mean_train_rewards, std_train_rewards, eval_means, eval_eps, cfg, output_dir)
     
     logging.info(f"\nTraining completed for {cfg.algorithm} with {cfg.runs} runs")
     

@@ -6,20 +6,20 @@ import matplotlib.pyplot as plt
 import logging
 
 def set_seed(seed=42):
-    
     random.seed(seed)
     np.random.seed(seed)
     torch.manual_seed(seed)
+    if torch.backends.mps.is_available():
+        torch.mps.manual_seed(seed)
     if torch.cuda.is_available():
         torch.cuda.manual_seed_all(seed)
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
+    torch.use_deterministic_algorithms(True, warn_only=True)
     
-def setup_logger(cfg, timestamp):
-    output_dir = cfg.output_dir
-    os.makedirs(output_dir, exist_ok=True)
+def setup_logger(output_dir):
     logging.basicConfig(
-        filename=f"{output_dir}/training_{timestamp}.log",
+        filename=os.path.join(output_dir, 'training.log'),
         level=logging.INFO,
         format='%(asctime)s - %(message)s',
         encoding='utf-8'
@@ -47,7 +47,7 @@ def set_default_config(cfg, parsed_args):
         if value is not None:
             setattr(cfg, key, value)
             
-def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_means, eval_eps, cfg, timestamp):
+def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_means, eval_eps, cfg, output_dir):
     plt.figure(figsize=(10,6))
     plt.plot(mean_train_rewards, label="Training Reward", alpha=0.3, color='blue')
     
@@ -78,7 +78,7 @@ def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_mea
     plt.title(f'Learning curve - {algorithm_name} (mean of {cfg.runs} runs)' if cfg.runs > 1 else f'Learning curve - {algorithm_name}')
     plt.legend(loc='lower right')
     plt.grid(alpha=0.3)
-    plot_path = os.path.join(cfg.output_dir, f"reward_plot_{cfg.algorithm}_{timestamp}.png")
+    plot_path = os.path.join(output_dir, f"reward_plot.png")
     plt.savefig(plot_path, dpi=200, bbox_inches='tight')
     plt.close()
     

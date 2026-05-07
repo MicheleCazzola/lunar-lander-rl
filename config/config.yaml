@@ -1,9 +1,11 @@
-algorithm: expected_sarsa
+algorithm: softmax_actor_critic
 episodes: 1200
 runs: 30
 output_dir: temp
 
 lr: 0.001
+lr_actor: 0.001
+lr_critic: 0.005
 gamma: 0.99
 tau: 0.001
 batch_size: 256
@@ -13,6 +15,10 @@ hidden_size: 128
 temp_init: 1.0
 temp_min: 0.01
 temp_decay: 0.995
+
+entropy_coef: 0.01
+use_average_reward: false
+avg_reward_alpha: 0.01
 
 window_width: 100
 eval_period: 50
