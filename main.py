@@ -12,10 +12,10 @@ import warnings
 # Suppress pkg_resources deprecation warning originating from pygame/gymnasium
 warnings.filterwarnings("ignore", category=UserWarning, module="pygame.pkgdata")
 from src.agent import LanderAgent, ActorCriticAgent
-from src.utils import plot_training_curve, set_seed, set_default_config, setup_logger
+from src.utils import plot_training_curve, save_results, set_seed, set_default_config, setup_logger
 from src.train import train_agent
 
-def single_run(run, cfg, timestamp):
+def single_run(run, cfg, output_dir):
     logging.info(f"\n========== STARTING RUN {run}/{cfg.runs} ==========")
     
     # Environment initialization
@@ -79,7 +79,7 @@ def single_run(run, cfg, timestamp):
     env_run.close()
     
     # Save model for current run
-    run_model_path = os.path.join(cfg.output_dir, f"model_run{run}.pth")
+    run_model_path = os.path.join(output_dir, f"model_run{run}.pth")
     if cfg.algorithm == "softmax_actor_critic":
         torch.save({
             'actor_state_dict': agent.actor.state_dict(),
@@ -146,20 +146,22 @@ def main():
     logging.info(f"Execution configuration saved in {config_path}")
     
     # Main loop over multiple runs
-    rewards, eval_means, eval_eps = [], [], []
+    rewards, eval_means, eval_episodes = [], [], []
     for run in range(1, cfg.runs + 1):
-        rewards_list, eval_history = single_run(run, cfg, timestamp)
+        rewards_list, eval_history = single_run(run, cfg, output_dir)
         
         rewards.append(rewards_list)
         eval_means.append([x[1] for x in eval_history])
-        eval_eps.append([x[0] for x in eval_history])
+        eval_episodes.append([x[0] for x in eval_history])
 
-    # Aggregation and final plotting
+    # Aggregation
     rewards = np.array(rewards)
     mean_train_rewards = np.mean(rewards, axis=0)
     std_train_rewards = np.std(rewards, axis=0)
     
-    plot_training_curve(mean_train_rewards, std_train_rewards, eval_means, eval_eps, cfg, output_dir)
+    # Save and plot results
+    save_results(rewards, mean_train_rewards, std_train_rewards, eval_means, eval_episodes, output_dir)
+    plot_training_curve(mean_train_rewards, std_train_rewards, eval_means, eval_episodes, cfg, output_dir)
     
     logging.info(f"\nTraining completed for {cfg.algorithm} with {cfg.runs} runs")
     

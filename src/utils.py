@@ -1,4 +1,5 @@
 import os
+import json
 import random
 import numpy as np
 import torch
@@ -47,7 +48,29 @@ def set_default_config(cfg, parsed_args):
         if value is not None:
             setattr(cfg, key, value)
             
-def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_means, eval_eps, cfg, output_dir):
+def save_results(rewards, mean_train_rewards, std_train_rewards, eval_means, eval_episodes, output_dir):
+    eval_means = np.array(eval_means)
+    train_episodes = list(range(1, len(mean_train_rewards) + 1))
+    eval_episodes = eval_episodes[0] if len(eval_episodes) > 0 and isinstance(eval_episodes[0], list) else eval_episodes
+    eval_mean, eval_std = (np.nanmean(eval_means, axis=0).tolist(), np.nanstd(eval_means, axis=0).tolist()) if len(eval_means) > 0 else ([], [])
+    train_rewards = {episode: x for episode, x in zip(train_episodes, rewards.T.tolist())}
+    eval_rewards = {episode: x for episode, x in zip(eval_episodes, eval_means.T.tolist())}
+    results = {
+        "train_rewards": train_rewards,
+        "eval_rewards": eval_rewards,
+        "episodes_train": train_episodes,
+        "train_mean": mean_train_rewards.tolist(),
+        "train_std": std_train_rewards.tolist(),
+        "episodes_eval": eval_episodes,
+        "eval_mean": eval_mean,
+        "eval_std": eval_std
+    }
+    results_path = os.path.join(output_dir, "results.json")
+    with open(results_path, 'w') as f:
+        json.dump(results, f, indent=4)
+    logging.info(f"Results saved in: {results_path}")
+            
+def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_means, eval_episodes, cfg, output_dir):
     plt.figure(figsize=(10,6))
     plt.plot(mean_train_rewards, label="Training Reward", alpha=0.3, color='blue')
     
@@ -62,8 +85,8 @@ def plot_training_curve(mean_train_rewards, std_train_rewards, all_runs_eval_mea
         global_eval_means = np.nanmean(all_runs_eval_means, axis=0)
         global_eval_stds = np.nanstd(all_runs_eval_means, axis=0)
         
-        # eval_eps is a list of lists (one per run), so we only need the first one for the X-axis
-        x_eval = eval_eps[0] if len(eval_eps) > 0 and isinstance(eval_eps[0], list) else eval_eps
+        # eval_episodes is a list of lists (one per run), so we only need the first one for the X-axis
+        x_eval = eval_episodes[0] if len(eval_episodes) > 0 and isinstance(eval_episodes[0], list) else eval_episodes
 
         plt.errorbar(
             x_eval, global_eval_means, yerr=global_eval_stds, 
