@@ -1,6 +1,6 @@
 # Empirical Analysis of Deep RL Algorithms for Action Control in Continuous State Spaces
 
-**[Work in Progress]**: the project is currently being refined. The codebase is fully functional, and statistical results are being compiled into final analytical plots.
+**[Coming Soon]**: the repository now contains the complete codebase and study only for action-value methods. I will soon be adding a similar study for policy-gradient algorithms, including a variant for continuous action spaces.
 
 ## Abstract
 This repository presents an empirical study on the training dynamics and hyperparameter sensitivity of Value-Based Deep Reinforcement Learning algorithms, specifically **Double Q-Learning** and **Double Expected Sarsa**, in environments featuring continuous state spaces and discrete action spaces ([LunarLander-v3](https://gymnasium.farama.org/environments/box2d/lunar_lander/)). 
