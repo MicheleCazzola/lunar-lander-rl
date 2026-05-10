@@ -83,5 +83,5 @@ The assumption of one algorithm strictly dominating the other in sample efficien
 │   ├── train.py             <- Training loop and evaluation logic
 │   └── utils.py             <- Utility functions for plotting, logging, and parameter handling
 ├── main.py                  <- Orchestrator for reproducibility and CLI execution
-└── plots.md              <- Detailed analytical plots
+└── plots.md                 <- Detailed analytical plots
 ```
