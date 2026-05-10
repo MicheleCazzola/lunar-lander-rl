@@ -228,7 +228,7 @@ playground*.ipynb
 *.pt
 
 # Temp
-#runs/
+runs/
 temp/
 tmp/
 outputs/
