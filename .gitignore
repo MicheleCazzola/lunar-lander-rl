@@ -214,6 +214,7 @@ data/
 # Playground
 playground/
 playground.ipynb
+playground*.ipynb
 
 # MacOS metadata files
 .DS_Store
